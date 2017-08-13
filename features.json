@@ -1,0 +1,334 @@
+﻿{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Mesón del Bucanero"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749312,
+          21.258102
+        ],
+        "type": "Point"
+      },
+      "id": "04366c02781ea16e683e355b20d2d051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Mamacita"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749264,
+          21.258115
+        ],
+        "type": "Point"
+      },
+      "id": "135219fc4563fe0d914779e0b8abb9d7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Hostal Plaza isla Mujeres"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.74923,
+          21.258039
+        ],
+        "type": "Point"
+      },
+      "id": "34e504dab5793087fce3b5bf393fff0d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Capricci Pizza & Sfizi"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749074,
+          21.258132
+        ],
+        "type": "Point"
+      },
+      "id": "544782eac2ff723f52dedcb8e5048603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Squalo Adventures",
+        "id": "43b09cd5-a0c8-4b8f-8934-b2eaf53fa9be",
+        "tags": "\"Diving\", \"Dive Shop\", \"Snorkel\", \"Scuba\"",
+        "icon": "store"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749534,
+          21.258268
+        ],
+        "type": "Point"
+      },
+      "id": "62c87456a1d0a8f38b863b49d3dcc6d0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Kokonuts"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749126,
+          21.258057
+        ],
+        "type": "Point"
+      },
+      "id": "6cd38145931d11b86f14a0874d756099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Fayne's Bar and Grill"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.748722,
+          21.257835
+        ],
+        "type": "Point"
+      },
+      "id": "75ea7b179fbf2f04b77489714c85aedf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Asia Caribe"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.748914,
+          21.258054
+        ],
+        "type": "Point"
+      },
+      "id": "78b8e989ed6b17bc65f48e695e4c8155"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "El Teniente"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749749,
+          21.258326
+        ],
+        "type": "Point"
+      },
+      "id": "79f82911ae9f8b42243a63b4005c5cb4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Angelo"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.748877,
+          21.257927
+        ],
+        "type": "Point"
+      },
+      "id": "7a828b42798a3274b6316b4378f8036e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "RE/MAX ISLA"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749223,
+          21.258217
+        ],
+        "type": "Point"
+      },
+      "id": "885c30cb80ba7c9f6ab0fcec77327c35"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Stingray Grill",
+        "id": "8bd109a5-5dc3-43fa-b672-cc8e7048e791"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749877,
+          21.258537
+        ],
+        "type": "Point"
+      },
+      "id": "911dc1d9082a6e06f049f778282e3145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Adelita Tequileria"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.748954,
+          21.257905
+        ],
+        "type": "Point"
+      },
+      "id": "9f5fc1029be75f05cec34a3542822338"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Rosticeria Mexicana"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.7494,
+          21.258198
+        ],
+        "type": "Point"
+      },
+      "id": "a343f231196d8b92b014dd3bf806deec"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Qubano"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.748782,
+          21.257978
+        ],
+        "type": "Point"
+      },
+      "id": "ae25ab6af24df5761a921c96b4bc999d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Tres Mentiras"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749645,
+          21.258338
+        ],
+        "type": "Point"
+      },
+      "id": "ae377ed73ef6c342361576be41fbdd1c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Brisa Mexicana"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.7485,
+          21.257791
+        ],
+        "type": "Point"
+      },
+      "id": "b6a74396185104748b3a6ac651f00a20"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Rooster"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749464,
+          21.258234
+        ],
+        "type": "Point"
+      },
+      "id": "bf381bc868dea6fdb829886d645cbb82"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Abarrotes Rocio",
+        "id": "2cb1478b-89c7-4f23-b279-46cfd4cad20a",
+        "tags": "\"Convenience Store\", \"Food\", \"Drink\"",
+        "icon": "store"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749908,
+          21.258483
+        ],
+        "type": "Point"
+      },
+      "id": "c4baba86ed95bf61c4162d073c9caa28"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Lola Valentina"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749389,
+          21.258302
+        ],
+        "type": "Point"
+      },
+      "id": "cedf40e4be92a0a69e1bc943868c054e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Bertha's"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749117,
+          21.257982
+        ],
+        "type": "Point"
+      },
+      "id": "d7aeb57d46becd58846e449878dc4588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Fredy's bar and Restaurant"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749573,
+          21.258291
+        ],
+        "type": "Point"
+      },
+      "id": "ee7ad2e3debc98c149c36cb49f5f63a8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "label": "Taqueria Medina"
+      },
+      "geometry": {
+        "coordinates": [
+          -86.749051,
+          21.25802
+        ],
+        "type": "Point"
+      },
+      "id": "f7a5899e7cb26234e766f82bd38e89ea"
+    }
+  ],
+  "type": "FeatureCollection"
+}

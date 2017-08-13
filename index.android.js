@@ -5,79 +5,47 @@
  */
 
 import React, { Component } from 'react';
-import Mapbox, { MapView } from 'react-native-mapbox-gl';
+import Map from './app/map'
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View,
   Image,
+  Alert,
+  TextInput,
+  ScrollView,
 } from 'react-native';
-import MapExample from './example';
+import { StackNavigator}  from 'react-navigation';
+import Search from './app/search.js'
+import Reactotron from 'reactotron-react-native'
+import Mapbox, { MapView } from 'react-native-mapbox-gl';
 
-class IslaMujeres extends Component {
-	state = {
-		center: {
-		  latitude: 21.258717,
-		  longitude: -86.7492
-		},
-		zoom: 14,
-		userTrackingMode: Mapbox.userTrackingMode.none,
-	}
-	
-  render() {
-    return (
-      <View style={styles.container}>   
-		<Image style={{width:325, height: 50}} source={require("./img/header.png")} />     
-		<MapView
-          ref={map => { this._map = map; }}
-          style={styles.map}
-          initialCenterCoordinate={this.state.center}
-          initialZoomLevel={this.state.zoom}
-          initialDirection={0}
-          rotateEnabled={true}
-          scrollEnabled={true}
-          zoomEnabled={true}
-          showsUserLocation={false}
-          styleURL={"mapbox://styles/vulpesnz/cj5753s0o3qq12rp3ge3gbyyb"}
-          userTrackingMode={this.state.userTrackingMode}
-          onChangeUserTrackingMode={this.onChangeUserTrackingMode}
-          onRegionDidChange={this.onRegionDidChange}
-          onRegionWillChange={this.onRegionWillChange}
-          onOpenAnnotation={this.onOpenAnnotation}
-          onRightAnnotationTapped={this.onRightAnnotationTapped}
-          onUpdateUserLocation={this.onUpdateUserLocation}
-          onLongPress={this.onLongPress}
-          onTap={this.onTap}
-        />
-      </View>
-    );
+
+
+class IslaMujeres extends Component{
+  constructor(props){
+      super(props);
+      Reactotron.connect()
+      Mapbox.setAccessToken('pk.eyJ1IjoidnVscGVzbnoiLCJhIjoiY2o1NWxkZGFtMGRlbzMzbWNnYmEzOG9ncCJ9.nXgM6lu675sFq_53JffL8g');
   }
+	render() {
+	return <View style={{flex:1}}>
+			<Image style={{width:325, height: 50}} source={require("./img/header.png")} />     
+			<MainTabs />
+		</View>;
+	}
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-	flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'stretch',
-    backgroundColor: '#F5FCFF',
+const MainTabs = StackNavigator({
+  Map: {
+    screen: Map,
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  Search: {
+    screen: Search,
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-  map: {
-    flex: 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
+},
+  { headerMode:'none'}
+);
 
 AppRegistry.registerComponent('IslaMujeres', () => IslaMujeres);
