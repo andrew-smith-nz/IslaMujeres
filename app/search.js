@@ -11,16 +11,29 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { TabNavigator}  from 'react-navigation';
-import { SearchBar } from 'react-native-elements';
+import SearchBar from './searchBar.js';
 import SearchResult from './searchResult.js';
 import Reactotron from 'reactotron-react-native'
 import LocationInfo from './locationInfo.js'
+
+// Search shortcuts (filter according to time of day)
+/* Breakfast
+Lunch
+Dinner
+Drinks
+Nightclubs
+Snacks
+ */
+
+ // sort results by Distance (then deals), Rating, Deals (then distance)
+
 
 export default class Search extends Component {
 	constructor(props)
 	{
 		super(props);
-		this.setSearchResults = this.setSearchResults.bind(this);
+		this.loadSearchResults = this.loadSearchResults.bind(this);
+		this.mapAllResults = this.mapAllResults.bind(this);
 		this.state = { 
 					search:this.props.navigation.state.params.searchTerms,
 					searchResults:<Text />,
@@ -33,44 +46,49 @@ export default class Search extends Component {
 	
 	componentWillMount()
 	{
-		this.setSearchResults();
+		this.loadSearchResults();
 	}
 
-	setSearchResults()
+	loadSearchResults()
 	{
 		var customData = require('../features.json');
-		var results = [];
+		var resultJSX = [];
+		var resultFeatures = [];
 		for (let i = 0; i < customData.features.length; i++)
 		{
 			if (customData.features[i].properties.label.toLowerCase().contains(this.state.search.toLowerCase()))
 			//	|| customData.features[i].properties.Type.toLowerCase().contains(this.state.search.toLowerCase()))
 			{
-				results.push(
-				<TouchableOpacity onPress={() => this.expand(customData.features[i])} key={'th' + customData.features[i].id}>
-					<LocationInfo id={customData.features[i].id}  />
-				</TouchableOpacity>);
+				resultFeatures.push(customData.features[i]);
 			}
 		}
-		this.setState({searchResults: results});
+		resultJSX = resultFeatures.map(feature => { return (
+			<TouchableOpacity onPress={() => this.mapResult(feature)} key={'th' + feature.id}>
+				<LocationInfo id={feature.id}  />
+			</TouchableOpacity>)});
+		if (resultJSX.length == 0) 
+			this.setState({searchResults: <Text style={{marginTop: 20, textAlign: 'center', fontSize:16}}>No results found</Text>, searchResultFeatures: []})
+		else
+			this.setState({searchResults: resultJSX, searchResultFeatures: resultFeatures});
 	}
 	
-	expand(result) {
-		Reactotron.log(result);
-		this.props.navigation.navigate('Map', { selectedLocationId: result.id });
+	mapResult(result) {
+		this.props.navigation.navigate('Map', { markedLocationIds: [ result.id ], selectedLocationId: result.id });
+	}
+
+	mapAllResults() {
+		this.props.navigation.navigate('Map', { markedLocationIds: this.state.searchResultFeatures.map(r => r.id), selectedLocationId: null });
 	}
 	
   render() {
     return (<View>
-				<SearchBar
-				  placeholder='Search...'
-				  round={true}
-				  onChangeText={(search) => this.setState({search}) }
-				  onEndEditing={() => this.setSearchResults() }
-				  value={this.state.search}
-				  lightTheme />
+				<SearchBar floating={false} callback={(searchTerms) => { this.setState({search: searchTerms}, this.loadSearchResults)}} searchTerms={this.state.search} />
 				  <ScrollView>
-					{this.state.searchResults}
+						{this.state.searchResults}
 				  </ScrollView>
+					<TouchableOpacity onPress={this.mapAllResults}>
+						<Text>Show all on map</Text>
+					</TouchableOpacity>
 			</View>);
   }
 }

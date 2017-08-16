@@ -4,7 +4,7 @@ import { View, StyleSheet, Image, TouchableOpacity, Text } from 'react-native'
 import LocationInfo from './locationInfo.js'
 import Reactotron from 'reactotron-react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { SearchBar } from 'react-native-elements';
+import SearchBar from './searchBar.js';
 
 const mapData = require('../features.json');
 
@@ -15,11 +15,13 @@ export default class Map extends Component {
         this.onTap = this.onTap.bind(this);
         this.onUpdateUserLocation = this.onUpdateUserLocation.bind(this);
         this.setActiveLocation = this.setActiveLocation.bind(this);
+        this.clearSearchResults = this.clearSearchResults.bind(this);
             
         this.state = {
             zoom: 14.5,
             userTrackingMode: Mapbox.userTrackingMode.none,   
-            selectedLocationId: '6cd38145931d11b86f14a0874d756099',
+            selectedLocationId:   this.props.navigation.state.params ? this.props.navigation.state.params.selectedLocationId : null,
+            markedLocationIds: this.props.navigation.state.params ? this.props.navigation.state.params.markedLocationIds : [],
             expanded: false,
             }
     }
@@ -42,20 +44,7 @@ export default class Map extends Component {
 
     setActiveLocation()
     {
-        if (this.props.navigation.state.params)
-        {
-            let location = this.getLocationFromId(this.props.navigation.state.params.selectedLocationId);
-            this._map.setCenterCoordinateZoomLevel(
-                location.geometry.coordinates[1], 
-                location.geometry.coordinates[0],
-                16,
-                animated = true, 
-                null);
-           if (this.state.selectedLocationId !== this.props.navigation.state.params.selectedLocationId) 
-               this.setState({ selectedLocationId: this.props.navigation.state.params.selectedLocationId})
-           if (this.state.zoom !== 16) this.setState({zoom: 16})
-           this.props.navigation.state.params = null;
-        }
+       
     }
 
     componentDidUpdate()
@@ -64,6 +53,7 @@ export default class Map extends Component {
     }
 
     getAnnotations(){
+        let selectedPin = require('../img/pin_selected.png');
         let annotations = [];
         if (this.state.selectedLocationId)
         {
@@ -73,12 +63,31 @@ export default class Map extends Component {
                 type: 'point',
                 
                 annotationImage: {
-                    source: { uri: 'https://cldup.com/CnRLZem9k9.png' },
-                    height: 25,
-                    width: 25
+                    source: {uri: 'pin_selected'},
+                    height: 36,
+                    width: 21
                 },
-                id: 'marker1'
+                id: location.id
             });
+        }
+        Reactotron.log(this.state.markedLocationIds);
+        for (i = 0; i < this.state.markedLocationIds.length; i++)
+        {
+            if (this.state.markedLocationIds[i] !== this.state.selectedLocationId)
+            {
+                let location = this.getLocationFromId(this.state.markedLocationIds[i]);
+                annotations.push({
+                    coordinates: [location.geometry.coordinates[1], location.geometry.coordinates[0]],
+                    type: 'point',
+                    
+                    annotationImage: {
+                        source: {uri: 'pin_unselected'},
+                        height: 36,
+                        width: 21
+                    },
+                    id: location.id
+                });
+            }
         }
         return annotations;
     }
@@ -109,8 +118,11 @@ export default class Map extends Component {
     }
 
     onUpdateUserLocation(payload){
-        Reactotron.log("setting user location to ");
         this.setState({userLocation: {longitude: payload.longitude, latitude: payload.latitude }});
+    }
+
+    clearSearchResults(){
+        this.setState({markedLocationIds: []});
     }
 
     render()
@@ -121,6 +133,7 @@ export default class Map extends Component {
                 };
         let mapHeight = this.state.expanded ? '40%' : '75%';
         let infoHeight = this.state.expanded ? '60%' : '25%';
+        let removeSearchHeight = this.state.selectedLocationId ? this.state.expanded ? '35%' : '70%' : '95%';
         return (
             <View style={styles.container}>  
                 <View style={ this.state.selectedLocationId ? {height: mapHeight} : {height:'100%'}}>
@@ -152,26 +165,23 @@ export default class Map extends Component {
                     </MapView>
                 </View>
                 
-                {this.state.selectedLocationId ? <View style={{alignItems:'center', borderWidth:0.5, borderColor:'#dddddd', height:20}}>
+                {this.state.selectedLocationId ? 
                     <TouchableOpacity onPress={() =>  this.toggleExpand()}>
-                         <Icon name={this.state.expanded ? "chevron-down" : "chevron-up"} size={12} color="#000000" />                   
-                    </TouchableOpacity>
-                </View> : null}
+                        <View style={{alignItems:'center', borderWidth:0.5, borderColor:'#dddddd', height:20}}>
+                            <Icon name={this.state.expanded ? "chevron-down" : "chevron-up"} size={12} color="#000000" />   
+                        </View>                
+                    </TouchableOpacity> : null}
                     {this.state.selectedLocationId ? <View style={{height: infoHeight}}>
                         <LocationInfo id={this.state.selectedLocationId} expanded={this.state.expanded} userLocation={this.state.userLocation} />
                     </View> : null } 
-                    <View  style={{position:'absolute', top:0, right:0,left:0,bottom:0, height:50, zIndex:1}}>
-                        <SearchBar
-                        placeholder='Search...'
-                        round={true}
-                        onChangeText={(search) =>  this.setState({search}) }
-                        onEndEditing={() => this.props.navigation.navigate('Search',  {searchTerms: this.state.search}) }
-                        value={this.state.search}
-                        lightTheme
-                        containerStyle={{backgroundColor:'transparent', borderWidth:0}}
-                        inputStyle={{backgroundColor:'white', borderColor:'black', borderWidth:0.5}}
-                        />
-                    </View>
+                    <SearchBar floating={true} callback={(searchTerms) => {this.props.navigation.navigate('Search',  {searchTerms})} } />
+                        {this.state.markedLocationIds.length > 0 ?
+                    <View style={{position:'absolute', top: 60, right:0,left:0,bottom:0, height:40, zIndex:1, alignItems:'center'}}>
+                        <TouchableOpacity onPress={() => this.clearSearchResults()}>
+                            <Text style={{ width: 200, textAlign:'center', borderRadius:6, borderWidth:0.5, borderColor:'black', backgroundColor: '#ffffff', paddingLeft:4, paddingRight:4}} >
+                                Clear Search Results</Text>
+                        </TouchableOpacity>
+                    </View> : null}
             </View>);
     }
 
