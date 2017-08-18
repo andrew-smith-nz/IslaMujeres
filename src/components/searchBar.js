@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Image, TouchableOpacity, Text } from 'react-native'
 import { SearchBar } from 'react-native-elements';
-import Reactotron from 'reactotron-react-native'
+import Reactotron from 'reactotron-react-native';
+import { bindActionCreators, connect } from 'react-redux';
+import { search } from '../actions/search.js';
 
-export default class CustomSearchBar extends Component {
+function mapStateToProps(state) { return { searchTerms: state.search.searchTerms }}
+function mapDispatchToProps (dispatch) { return { search: (searchTerms) => dispatch(search(searchTerms)) } }
+
+class CustomSearchBar extends Component {
     constructor(props) {
         super(props);
         this.fireCallback = this.fireCallback.bind(this);
@@ -12,15 +17,21 @@ export default class CustomSearchBar extends Component {
 
     fireCallback()
     {
-        this.props.callback(this.state.search);
+        if (this.props.callback)
+            this.props.callback();
+    }
+    
+    componentWillReceiveProps(newProps){
+        if (this.props.searchTerms != newProps.searchTerms)
+            this.setState({search: newProps.searchTerms });
     }
     
     render() {
         let bar = <SearchBar
                         placeholder='Search...'
                         round={true}
-                        onChangeText={(search) =>  this.setState({search}) }
-                        onEndEditing={this.fireCallback}
+                        onChangeText={(text) => this.setState({search: text}) }
+                        onEndEditing={() => { this.props.search(this.state.search); this.fireCallback() }}
                         value={this.state.search}
                         lightTheme
                         containerStyle={{backgroundColor:'transparent', borderWidth:0}}
@@ -39,3 +50,5 @@ export default class CustomSearchBar extends Component {
         }
     }
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(CustomSearchBar);

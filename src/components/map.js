@@ -5,10 +5,14 @@ import LocationInfo from './locationInfo.js'
 import Reactotron from 'reactotron-react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import SearchBar from './searchBar.js';
+import { bindActionCreators, connect } from 'react-redux';
+import { search } from '../actions/search.js';
 
-const mapData = require('../features.json');
+const mapData = require('../../features.json');
+function mapStateToProps(state) { return { searchTerms: state.search.searchTerms }}
+function mapDispatchToProps (dispatch) { return { search: (searchTerms) => dispatch(search(searchTerms)) } }
 
-export default class Map extends Component {
+class Map extends Component {
     constructor(props)
     {
         super(props);       
@@ -69,13 +73,11 @@ export default class Map extends Component {
                 id: location.id
             });
         }
-        Reactotron.log(this.state.markedLocationIds);
         for (i = 0; i < this.state.markedLocationIds.length; i++)
         {
             if (this.state.markedLocationIds[i] !== this.state.selectedLocationId)
             {
                 let location = this.getLocationFromId(this.state.markedLocationIds[i]);
-                Reactotron.log(location.properties.icon)
                 annotations.push({
                     coordinates: [location.geometry.coordinates[1], location.geometry.coordinates[0]],
                     type: 'point',
@@ -99,7 +101,6 @@ export default class Map extends Component {
                 if (this.state.markedLocationIds[i] !== this.state.selectedLocationId)
                 {
                     let location = this.getLocationFromId(this.state.markedLocationIds[i]);
-                    Reactotron.log(location.properties.icon)
                     annotations.push({JSX: <Annotation
                         id="annotation2"
                         coordinate={{latitude: 37.55, longitude: -122.25}}
@@ -206,7 +207,7 @@ export default class Map extends Component {
                     {this.state.selectedLocationId ? <View style={{height: infoHeight}}>
                         <LocationInfo id={this.state.selectedLocationId} expanded={this.state.expanded} userLocation={this.state.userLocation} />
                     </View> : null } 
-                    <SearchBar floating={true} callback={(searchTerms) => {this.props.navigation.navigate('Search',  {searchTerms})} } />
+                    <SearchBar floating={true} callback={() => { this.props.navigation.navigate('Search')}} />
                         {this.state.markedLocationIds.length > 0 ?
                     <View style={{position:'absolute', top: 60, right:0,left:0,bottom:0, height:40, zIndex:1, alignItems:'center'}}>
                         <TouchableOpacity onPress={() => this.clearSearchResults()}>
@@ -216,9 +217,6 @@ export default class Map extends Component {
                     </View> : null}
             </View>);
     }
-
-
-
 }
 
 const styles = StyleSheet.create({
@@ -244,3 +242,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
+
+export default connect(mapStateToProps, mapDispatchToProps)(Map);

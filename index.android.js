@@ -1,11 +1,8 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import { search } from './src/reducers/search';
 
 import React, { Component } from 'react';
-import Map from './app/map'
+import Map from './src/components/map'
+import Search from './src/components/search.js'
 import {
   AppRegistry,
   StyleSheet,
@@ -17,12 +14,12 @@ import {
   ScrollView,
 } from 'react-native';
 import { StackNavigator, TabNavigator}  from 'react-navigation';
-import Search from './app/search.js'
 import Reactotron, { asyncStorage } from 'reactotron-react-native'
 import Mapbox, { MapView } from 'react-native-mapbox-gl';
-import MapExample from './app/mapExample.js'
+import { createStore, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
 
-
+let store = createStore(combineReducers({search}));
 
 class IslaMujeres extends Component{
   constructor(props){
@@ -31,9 +28,11 @@ class IslaMujeres extends Component{
       Mapbox.setAccessToken('pk.eyJ1IjoidnVscGVzbnoiLCJhIjoiY2o1NWxkZGFtMGRlbzMzbWNnYmEzOG9ncCJ9.nXgM6lu675sFq_53JffL8g');
   }
 	render() {
-	return <View style={{flex:1}}>
-			<MainTabs />
-		</View>;
+	return <Provider store={store}>
+            <View style={{flex:1}}>
+              <MainTabs />
+            </View>
+         </Provider> ;
 	}
 }
 

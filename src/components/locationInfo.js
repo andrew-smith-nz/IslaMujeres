@@ -6,8 +6,8 @@ import Reactotron from 'reactotron-react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const images = {
-  starFilled: require('../img/star_filled.png'),
-  starUnfilled: require('../img/star_unfilled.png')
+  starFilled: require('../../img/star_filled.png'),
+  starUnfilled: require('../../img/star_unfilled.png')
 }
 
 export default class LocationInfo extends Component{
@@ -25,7 +25,7 @@ export default class LocationInfo extends Component{
 
     getInfo()
     {
-		var customData = require('../features.json');
+		var customData = require('../../features.json');
         return customData.features.find(f => f.id === this.props.id);
     }
 
@@ -99,7 +99,7 @@ export default class LocationInfo extends Component{
         return (
             <View>
                 <View style={{flexDirection:'row'}}>
-                    <Thumbnails imageSource={require("../img/no_photo_available.png")} />
+                    <Thumbnails imageSource={require("../../img/no_photo_available.png")} />
                     <View style={{margin:3, flexDirection:'column', width:'70%'}}>
                         <View style={{flexDirection:'row', justifyContent:'space-between', borderBottomWidth:0.5, borderBottomColor:'#dddddd'}}>
                             <Text style={styles.locationHeading}>{info.properties.label}</Text>
