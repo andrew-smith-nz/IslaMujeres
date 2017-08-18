@@ -59,7 +59,7 @@ export default class LocationInfo extends Component{
 
     async setFavorite(id)
     {     
-        AsyncStorage.getItem("Favorites").then((result) => { this.setState({favorite: result.indexOf(id) > -1, showFavorite:true})});
+        AsyncStorage.getItem("Favorites").then((result) => { if (result) this.setState({favorite: result.indexOf(id) > -1, showFavorite:true})});
     }
 
     async togglefavorite(id)

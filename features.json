@@ -3,7 +3,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Mesón del Bucanero"
+        "label": "Mesón del Bucanero",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -17,7 +18,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Mamacita"
+        "label": "Mamacita",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -45,7 +47,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Capricci Pizza & Sfizi"
+        "label": "Capricci Pizza & Sfizi",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -76,7 +79,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Kokonuts"
+        "label": "Kokonuts",
+        "icon": "bar"
       },
       "geometry": {
         "coordinates": [
@@ -90,7 +94,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Fayne's Bar and Grill"
+        "label": "Fayne's Bar and Grill",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -104,7 +109,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Asia Caribe"
+        "label": "Asia Caribe",
+        "icon": "bar"
       },
       "geometry": {
         "coordinates": [
@@ -132,7 +138,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Angelo"
+        "label": "Angelo",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -161,6 +168,7 @@
       "type": "Feature",
       "properties": {
         "label": "Stingray Grill",
+        "icon": "restaurant",
         "id": "8bd109a5-5dc3-43fa-b672-cc8e7048e791"
       },
       "geometry": {
@@ -175,7 +183,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Adelita Tequileria"
+        "label": "Adelita Tequileria",
+        "icon": "bar"
       },
       "geometry": {
         "coordinates": [
@@ -189,7 +198,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Rosticeria Mexicana"
+        "label": "Rosticeria Mexicana",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -203,7 +213,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Qubano"
+        "label": "Qubano",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -217,7 +228,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Tres Mentiras"
+        "label": "Tres Mentiras",
+        "icon": "bar"
       },
       "geometry": {
         "coordinates": [
@@ -231,7 +243,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Brisa Mexicana"
+        "label": "Brisa Mexicana",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -245,7 +258,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Rooster"
+        "label": "Rooster",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -276,7 +290,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Lola Valentina"
+        "label": "Lola Valentina",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -290,7 +305,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Bertha's"
+        "label": "Bertha's",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -304,7 +320,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Fredy's bar and Restaurant"
+        "label": "Fredy's bar and Restaurant",
+        "icon": "restaurant"
       },
       "geometry": {
         "coordinates": [
@@ -318,7 +335,8 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Taqueria Medina"
+        "label": "Taqueria Medina",
+        "icon": "bar"
       },
       "geometry": {
         "coordinates": [

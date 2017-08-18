@@ -34,8 +34,10 @@ export default class Search extends Component {
 		super(props);
 		this.loadSearchResults = this.loadSearchResults.bind(this);
 		this.mapAllResults = this.mapAllResults.bind(this);
+		let searchTerms = this.props.navigation.state.params ? this.props.navigation.state.params.searchTerms : "";
+		Reactotron.log('firing constructor for search');
 		this.state = { 
-					search:this.props.navigation.state.params.searchTerms,
+					search:searchTerms,
 					searchResults:<Text />,
 		};
 	}	
@@ -78,6 +80,7 @@ export default class Search extends Component {
 
 	mapAllResults() {
 		this.props.navigation.navigate('Map', { markedLocationIds: this.state.searchResultFeatures.map(r => r.id), selectedLocationId: null });
+		//this.props.navigation.navigate('Map');
 	}
 	
   render() {

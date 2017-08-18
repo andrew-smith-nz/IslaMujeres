@@ -16,10 +16,11 @@ import {
   TextInput,
   ScrollView,
 } from 'react-native';
-import { StackNavigator}  from 'react-navigation';
+import { StackNavigator, TabNavigator}  from 'react-navigation';
 import Search from './app/search.js'
 import Reactotron, { asyncStorage } from 'reactotron-react-native'
 import Mapbox, { MapView } from 'react-native-mapbox-gl';
+import MapExample from './app/mapExample.js'
 
 
 
@@ -36,7 +37,7 @@ class IslaMujeres extends Component{
 	}
 }
 
-const MainTabs = StackNavigator({
+const MainTabs = TabNavigator({
   Map: {
     screen: Map,
   },

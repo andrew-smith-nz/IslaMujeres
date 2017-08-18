@@ -3,12 +3,10 @@ package com.islamujeres;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-
 import com.mapbox.reactnativemapboxgl.ReactNativeMapboxGLPackage; // <-- import
 
 import java.util.Arrays;
@@ -26,8 +24,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new VectorIconsPackage(),
-        new ReactNativeMapboxGLPackage()  // <-- Register package here		  
+            new ReactNativeMapboxGLPackage()
       );
     }
   };

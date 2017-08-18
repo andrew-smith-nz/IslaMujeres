@@ -1,4 +1,4 @@
-import Mapbox, { MapView, Annotations } from 'react-native-mapbox-gl';
+import Mapbox, { MapView, Annotations, Annotation } from 'react-native-mapbox-gl';
 import React, { Component } from 'react';
 import { View, StyleSheet, Image, TouchableOpacity, Text } from 'react-native'
 import LocationInfo from './locationInfo.js'
@@ -18,7 +18,7 @@ export default class Map extends Component {
         this.clearSearchResults = this.clearSearchResults.bind(this);
             
         this.state = {
-            zoom: 14.5,
+            zoom: 16,
             userTrackingMode: Mapbox.userTrackingMode.none,   
             selectedLocationId:   this.props.navigation.state.params ? this.props.navigation.state.params.selectedLocationId : null,
             markedLocationIds: this.props.navigation.state.params ? this.props.navigation.state.params.markedLocationIds : [],
@@ -34,7 +34,7 @@ export default class Map extends Component {
     componentWillMount()
     {
         // TODO: remove hardcoding
-        this.onUpdateUserLocation({ latitude: 21.2582, longitude: -86.7492 });
+        //this.onUpdateUserLocation({ latitude: 21.2582, longitude: -86.7492 });
     }
 
     componentDidMount()
@@ -53,7 +53,6 @@ export default class Map extends Component {
     }
 
     getAnnotations(){
-        let selectedPin = require('../img/pin_selected.png');
         let annotations = [];
         if (this.state.selectedLocationId)
         {
@@ -63,9 +62,9 @@ export default class Map extends Component {
                 type: 'point',
                 
                 annotationImage: {
-                    source: {uri: 'pin_selected'},
-                    height: 36,
-                    width: 21
+                    source: {uri: location.properties.icon},
+                    height: 20,
+                    width: 20
                 },
                 id: location.id
             });
@@ -76,14 +75,15 @@ export default class Map extends Component {
             if (this.state.markedLocationIds[i] !== this.state.selectedLocationId)
             {
                 let location = this.getLocationFromId(this.state.markedLocationIds[i]);
+                Reactotron.log(location.properties.icon)
                 annotations.push({
                     coordinates: [location.geometry.coordinates[1], location.geometry.coordinates[0]],
                     type: 'point',
                     
                     annotationImage: {
-                        source: {uri: 'pin_unselected'},
-                        height: 36,
-                        width: 21
+                        source: {uri: location.properties.icon},
+                        height: 20,
+                        width: 20
                     },
                     id: location.id
                 });
@@ -93,7 +93,39 @@ export default class Map extends Component {
     }
 
     getCustomAnnotations(){
-        return null;
+        let annotations = [];
+        for (i = 0; i < this.state.markedLocationIds.length; i++)
+            {
+                if (this.state.markedLocationIds[i] !== this.state.selectedLocationId)
+                {
+                    let location = this.getLocationFromId(this.state.markedLocationIds[i]);
+                    Reactotron.log(location.properties.icon)
+                    annotations.push({JSX: <Annotation
+                        id="annotation2"
+                        coordinate={{latitude: 37.55, longitude: -122.25}}
+                        style={{alignItems: 'center', justifyContent: 'center', position: 'absolute'}}
+                      >
+                        <View style={{width: 200, height: 200, borderWidth: 1, borderColor: 'red', borderRadius: 50, backgroundColor: 'white', flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+                          <Image
+                            style={{width: 20, height: 20}}
+                            source={{uri: location.properties.icon}}
+                          />
+                        </View>
+                    </Annotation>});
+                    /* annotations.push({
+                        coordinates: [location.geometry.coordinates[1], location.geometry.coordinates[0]],
+                        type: 'point',
+                        
+                        annotationImage: {
+                            source: {uri: location.properties.icon},
+                            height: 20,
+                            width: 20
+                        },
+                        id: location.id
+                    }); */
+                }
+            }
+            return annotations.map(a => {return <View><Text>Test</Text></View>});
     }
     
     toggleExpand(){        
