@@ -17,6 +17,7 @@ import Reactotron from 'reactotron-react-native'
 import LocationInfo from './locationInfo.js'
 import { bindActionCreators, connect } from 'react-redux';
 import { search } from '../actions/search.js';
+import { setActiveLocation, setHighlightedLocations } from '../actions/map.js';
 
 
 // Search shortcuts (filter according to time of day)
@@ -30,7 +31,11 @@ Snacks
 
  // sort results by Distance (then deals), Rating, Deals (then distance)
 function mapStateToProps(state) { return { searchTerms: state.search.searchTerms }}
-function mapDispatchToProps (dispatch) { return { search: (searchTerms) => dispatch(search(searchTerms)) } }
+function mapDispatchToProps (dispatch) { return { 
+	search: (searchTerms) => dispatch(search(searchTerms)), 
+	setActiveLocation: (id) => dispatch(setActiveLocation(id)), 
+	setHighlightedLocations: (ids) => dispatch(setHighlightedLocations(ids)) 
+} }
 
 class Search extends Component {
 	constructor(props)
@@ -59,6 +64,8 @@ class Search extends Component {
 		var customData = require('../../features.json');
 		var resultJSX = [];
 		var resultFeatures = [];
+		if (!this.props.searchTerms.length) 
+			return (<View />);
 		for (let i = 0; i < customData.features.length; i++)
 		{
 			if (customData.features[i].properties.label.toLowerCase().contains(this.props.searchTerms.toLowerCase()))
@@ -80,11 +87,14 @@ class Search extends Component {
 	
 	mapResult(result) {
 		//this.props.navigation.navigate('Map', { markedLocationIds: [ result.id ], selectedLocationId: result.id });
+		this.props.setActiveLocation(result.id);
 		this.props.navigation.navigate('Map');
 	}
 
 	mapAllResults(resultFeatures) {
 		//this.props.navigation.navigate('Map', { markedLocationIds: resultFeatures.map(r => r.id), selectedLocationId: null });
+		this.props.setActiveLocation(resultFeatures[0].id);
+		this.props.setHighlightedLocations(resultFeatures.map((f) => { return f.id }));
 		this.props.navigation.navigate('Map');
 	}
 	
@@ -92,19 +102,25 @@ class Search extends Component {
 		var customData = require('../../features.json');
 		var resultJSX = [];
 		var resultFeatures = [];
-		for (let i = 0; i < customData.features.length; i++)
+		if (this.props.searchTerms)
 		{
-			if (customData.features[i].properties.label.toLowerCase().contains(this.props.searchTerms.toLowerCase()))
-			//	|| customData.features[i].properties.Type.toLowerCase().contains(this.state.search.toLowerCase()))
+			for (let i = 0; i < customData.features.length; i++)
 			{
-				resultFeatures.push(customData.features[i]);
+				if (customData.features[i].properties.label.toLowerCase().contains(this.props.searchTerms.toLowerCase()))
+				//	|| customData.features[i].properties.Type.toLowerCase().contains(this.state.search.toLowerCase()))
+				{
+					resultFeatures.push(customData.features[i]);
+				}
 			}
+			resultJSX = resultFeatures.map(feature => { return (
+				<TouchableOpacity onPress={() => this.mapResult(feature)} key={'th' + feature.id}>
+					<LocationInfo id={feature.id}  />
+				</TouchableOpacity>)});
 		}
-		resultJSX = resultFeatures.map(feature => { return (
-			<TouchableOpacity onPress={() => this.mapResult(feature)} key={'th' + feature.id}>
-				<LocationInfo id={feature.id}  />
-			</TouchableOpacity>)});
-
+		else
+		{
+			resultJSX.push(<View key={null}/>);
+		}
 		return (<View>
 					<SearchBar floating={false} />
 					<ScrollView style={{height:'80%'}}>

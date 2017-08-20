@@ -1,4 +1,5 @@
 import { search } from './src/reducers/search';
+import { setActiveLocation, setHighlightedLocations } from './src/reducers/map';
 
 import React, { Component } from 'react';
 import Map from './src/components/map'
@@ -19,7 +20,7 @@ import Mapbox, { MapView } from 'react-native-mapbox-gl';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 
-let store = createStore(combineReducers({search}));
+let store = createStore(combineReducers({search, setActiveLocation, setHighlightedLocations}));
 
 class IslaMujeres extends Component{
   constructor(props){
@@ -44,7 +45,9 @@ const MainTabs = TabNavigator({
     screen: Search,
   },
 },
-  { headerMode:'none'}
+  { headerMode:'none',
+    swipeEnaled:false
+  }
 );
 
 AppRegistry.registerComponent('IslaMujeres', () => IslaMujeres);
