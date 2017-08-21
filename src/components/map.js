@@ -8,21 +8,29 @@ import SearchBar from './searchBar.js';
 import { bindActionCreators, connect } from 'react-redux';
 import { search } from '../actions/search.js';
 import { setActiveLocation, setHighlightedLocations } from '../actions/map.js';
+import MapMarker from './mapMarker.js';
 
 const mapData = require('../../features.json');
 
 function mapStateToProps(state) { return { 
     searchTerms: state.search.searchTerms, 
     activeLocationId: state.setActiveLocation.id,
-    highlightedLocations: state.setHighlightedLocations.ids
+    highlightedLocations: state.setHighlightedLocations.ids,
+    recenterMap: state.setActiveLocation.recenterMap
 }}
 function mapDispatchToProps (dispatch) { return { 
 	search: (searchTerms) => dispatch(search(searchTerms)), 
-	setActiveLocation: (id) => dispatch(setActiveLocation(id)) ,
+	setActiveLocation: (id) => dispatch(setActiveLocation(id, false)) ,
 	setHighlightedLocations: (ids) => dispatch(setHighlightedLocations(ids)) 
 } }
 
 class Map extends Component {
+    static navigationOptions = {
+        tabBarIcon: ({ tintColor }) => (
+            <Icon name="map-o" size={16} color={'white'} />
+        ),
+      };
+
     constructor(props)
     {
         super(props);       
@@ -34,9 +42,11 @@ class Map extends Component {
             
         this.state = {
             zoom: 16,
-            userTrackingMode: Mapbox.userTrackingMode.none,   
+            userTrackingMode: Mapbox.userTrackingMode.followWithHeading,   
             selectedLocationId:   this.props.activeLocationId,
             markedLocationIds: this.props.navigation.state.params ? this.props.navigation.state.params.markedLocationIds : [],
+            //
+            recenterMap: false,
             expanded: false,
             }
     }
@@ -52,18 +62,26 @@ class Map extends Component {
         //this.onUpdateUserLocation({ latitude: 21.2582, longitude: -86.7492 });
     }
 
+    componentWillReceiveProps(newProps)
+    {
+        if (newProps.recenterMap)
+        {
+            let location = this.getLocationFromId(newProps.activeLocationId);
+            this._map.setCenterCoordinate(location.geometry.coordinates[1], location.geometry.coordinates[0], true, null);                
+        }    
+    }
+
     componentDidMount()
     {        
     }
 
     setActiveLocation(id)
     {
-        Reactotron.log("Set Active Locaction = " + id)
         this.props.setActiveLocation(id);
     }
 
     componentDidUpdate()
-    {        
+    {
     }
 
     getAnnotations(){
@@ -109,22 +127,18 @@ class Map extends Component {
         for (i = 0; i < this.props.highlightedLocations.length; i++)
         {
             let location = this.getLocationFromId(this.props.highlightedLocations[i]);
-            annotations.push({JSX: <Annotation
-                id={location.id}
-                key={location.id}
-                coordinate={{latitude: location.geometry.coordinates[1], longitude: location.geometry.coordinates[0]}}
-                style={{alignItems: 'center', justifyContent: 'center', position: 'absolute', zIndex: location.id !== this.props.activeLocationId ? 0 : 1}}
-                >
-                <View key={location.id} style={{ flex: 1, justifyContent: 'center', alignItems: 'center', width: 60, height: 40}}>
-                    <TouchableOpacity key={location.id} onPress={() => this.setActiveLocation(location.id)}>
-                        <Image key={location.id}
-                        style={{width: location.id !== this.props.activeLocationId ? 15 : 20, height: location.id !== this.props.activeLocationId ? 15 : 20}}
-                        source={{uri: location.properties.icon ? location.properties.icon : "marker"}}
-                        />
-                    </TouchableOpacity>
-                    {true ? null : <Text style={{fontSize:8, textAlign:'center'}}>{location.properties.label}</Text>}
-                </View>
-            </Annotation>});
+            let isSelected = location.id === this.props.activeLocationId;
+            annotations.push({JSX: <MapMarker location={location} isSelected={isSelected} /> });
+        }
+        if (annotations.length === 0)
+        {
+            // shove everything in
+            for (i = 0; i < mapData.features.length; i++)
+                {
+                    let location = mapData.features[i];
+                    let isSelected = location.id === this.props.activeLocationId;
+                    annotations.push({JSX: <MapMarker location={location} isSelected={isSelected} /> });
+                }
         }
         return annotations.map(a => {return a.JSX});
     }
@@ -134,10 +148,24 @@ class Map extends Component {
     }
     
     onTap(payload){
-        Reactotron.log("Ontap")
         let closestDistance = 99999;
         let currentDistance = 0;
         let closestId = null;
+        if (this.props.highlightedLocations.length === 0)
+        {
+            for (i = 0; i < mapData.features.length; i++)
+                {
+                    let location = mapData.features[i];
+                    
+                    currentDistance = Math.sqrt(Math.pow(Math.abs(payload.longitude - location.geometry.coordinates[0]), 2) + 
+                        Math.abs(Math.pow(payload.latitude - location.geometry.coordinates[1], 2)));
+                    if (currentDistance < closestDistance)
+                    {
+                        closestDistance = currentDistance;
+                        closestId =  location.id;
+                    }
+                }
+        }
         for (i = 0; i < this.props.highlightedLocations.length; i++)
         {
             let location = this.getLocationFromId(this.props.highlightedLocations[i]);
@@ -154,7 +182,6 @@ class Map extends Component {
     }
 
     openAnnotation(payload){
-        Reactotron.log("Annotation Clicked" + payload.id)
         this.setActiveLocation(payload.id);
         //this.props.setActiveLocation(payload.id);
         //this.props.navigation.navigate("Map");
@@ -175,18 +202,18 @@ class Map extends Component {
     }
 
     render()
-    {
+    {        
         let centerCoordinate = {
                 latitude: 21.258717,
                 longitude: -86.7492
                 };
-        let mapHeight = this.state.expanded ? '40%' : '75%';
-        let infoHeight = this.state.expanded ? '60%' : '25%';
+        let mapHeight = '75%';
+        let infoHeight = '25%';
         let removeSearchHeight = this.props.activeLocationId ? this.state.expanded ? '35%' : '70%' : '95%';
         return (
             <View style={styles.container}> 
                 {this.state.expanded && this.props.activeLocationId ? null : 
-                <View style={ this.props.activeLocationId ? {height: mapHeight} : {height:'100%'}}>
+                <View style={{height: mapHeight}}>
                     <MapView
                     ref={map => { this._map = map; }}
                     style={styles.map}
@@ -214,19 +241,18 @@ class Map extends Component {
                     />
                 </View>}
                 
-                {this.props.activeLocationId ? 
-                    <TouchableOpacity onPress={() =>  this.toggleExpand()}>
+                    <TouchableOpacity onPress={() => { if(this.props.activeLocationId) this.toggleExpand(); } }>
                         <View style={{alignItems:'center', borderWidth:0.5, borderColor:'#dddddd', height:20}}>
-                            <Icon name={this.state.expanded ? "chevron-down" : "chevron-up"} size={12} color="#000000" />   
+                            <Icon name={this.state.expanded ? "chevron-down" : "chevron-up"} size={12} color={this.props.activeLocationId ? "#000000" : "#aaaaaa"} />   
                         </View>                
-                    </TouchableOpacity> : null}
-                    {this.props.activeLocationId ? <View style={{height: infoHeight}}>
+                    </TouchableOpacity>
+                    <View style={{height: infoHeight}}>
                         <LocationInfo id={this.props.activeLocationId} expanded={this.state.expanded} userLocation={this.state.userLocation} />
-                    </View> : null } 
+                    </View>
                     {this.state.expanded && this.props.activeLocationId ? null : 
                     <SearchBar floating={true} callback={() => { this.props.navigation.navigate('Search')}} />}
-                        {this.props.highlightedLocations.length > 0 && !this.state.expanded ?
-                    <View style={{position:'absolute', top: 20, right:20,left:0,bottom:0, height:40, zIndex:1, alignItems:'center'}}>
+                        {(this.props.highlightedLocations.length > 0 && !this.state.expanded) ?
+                    <View style={{position:'absolute', width:'93%', top: 20, right:30, left:0,bottom:0, height:40, zIndex:1, alignItems:'flex-end'}}>
                         <TouchableOpacity onPress={() => this.clearSearchResults()}>
                             <Icon name="times" size={16} color='black' />
                         </TouchableOpacity>

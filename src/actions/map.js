@@ -1,11 +1,12 @@
 export const SET_ACTIVE_LOCATION = "SET_ACTIVE_LOCATION";
 export const SET_HIGHLIGHTED_LOCATIONS = "SET_HIGHLIGHTED_LOCATIONS";
 
-export function setActiveLocation(id)
+export function setActiveLocation(id, recenterMap)
 {
     return {
             type:SET_ACTIVE_LOCATION,
-            id
+            id,
+            recenterMap
         };
 }
 

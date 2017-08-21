@@ -4,13 +4,22 @@ import styles from '../style/stylesheet.js';
 import Thumbnails from './thumbnails.js';
 import Reactotron from 'reactotron-react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { toggleFavorite } from '../actions/favorite.js';
+import { bindActionCreators, connect } from 'react-redux';
 
 const images = {
   starFilled: require('../../img/star_filled.png'),
   starUnfilled: require('../../img/star_unfilled.png')
 }
 
-export default class LocationInfo extends Component{
+function mapStateToProps(state) { return { 
+    favorites: state.toggleFavorite.favorites
+}}
+function mapDispatchToProps (dispatch) { return { 
+	toggleFavorite: (id) => dispatch(toggleFavorite(id)), 
+} }
+
+class LocationInfo extends Component{
     constructor(props)
     {
         super(props);
@@ -45,67 +54,48 @@ export default class LocationInfo extends Component{
 
         return this.formatDistance(12742 * Math.asin(Math.sqrt(a))); // 2 * R; R = 6371 km
     }
-
-    componentWillMount()
+    
+    componentWillMount(newProps)
     {        
-		navigator.geolocation.getCurrentPosition((position) => this.setCurrentPosition(position), null, null);
-                    this.setFavorite(this.props.id)
+        this.setCurrentPosition();
     }
 
-	setCurrentPosition(position)
+    componentWillReceiveProps(newProps)
+    {        
+        this.setCurrentPosition();
+    }
+
+	setCurrentPosition()
 	{
-        this.setState({latitude: position.coords.latitude, longitude: position.coords.longitude});
+        navigator.geolocation.getCurrentPosition((position) => this.setState({latitude: position.coords.latitude, longitude: position.coords.longitude}), null, null);
+        
     }
 
-    async setFavorite(id)
-    {     
-        AsyncStorage.getItem("Favorites").then((result) => { if (result) this.setState({favorite: result.indexOf(id) > -1, showFavorite:true})});
-    }
-
-    async togglefavorite(id)
+    togglefavorite(id)
     {
-        let favorites = [];
-        let isFavorite = true;
-        AsyncStorage.getItem("Favorites").then((result) => {
-            favorites = JSON.parse(result);
-        }).then(() => {
-            if (favorites)
-            {
-                let index = favorites.indexOf(id);
-                if (index > -1)
-                    {
-                        favorites.splice(index, 1);
-                        isFavorite = false;
-                    }
-                else
-                    {
-                        favorites.push(id);
-                    }
-            }
-            else
-            {
-                favorites = [id];
-            }
-            AsyncStorage.setItem("Favorites", JSON.stringify(favorites));
-        }
-        ).then(() => { this.setState({favorite: isFavorite})});
+        this.props.toggleFavorite(id);
     }
 
     render() {
         let info = this.getInfo();
+        if (!info)
+        {
+            return (<View style={{height:'75%', alignItems:'center', justifyContent:'center'}}><Text>No Location Selected</Text></View>);
+        }
         info.description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis maximus ullamcorper. Nullam venenatis ex eget aliquam efficitur. Proin imperdiet fermentum dolor, et consequat metus ullamcorper eu. Quisque rhoncus vitae dolor ac iaculis. Donec velit enim, tristique ac nisl id, sollicitudin vulputate mi. Aliquam pulvinar gravida sapien, a fringilla dui pharetra sit amet. Etiam a lorem eu eros efficitur ultrices sit amet sit amet lectus. Proin et dui tincidunt, tempus elit quis, interdum magna.';
         info.tags = ['Bar', 'Restaurant', 'Live Music'];
-        info.deals = '2 for 1 Margaritas with coupon';
+        info.deals = '2 for 1 Margaritas with main meal';
+        
         return (
             <View>
                 <View style={{flexDirection:'row'}}>
-                    <Thumbnails imageSource={require("../../img/no_photo_available.png")} />
+                    <Thumbnails id={this.props.id} />
                     <View style={{margin:3, flexDirection:'column', width:'70%'}}>
                         <View style={{flexDirection:'row', justifyContent:'space-between', borderBottomWidth:0.5, borderBottomColor:'#dddddd'}}>
                             <Text style={styles.locationHeading}>{info.properties.label}</Text>
                             <Text style={styles.locationHeading}>{this.state.favorite}</Text>
                             <TouchableOpacity onPress={() => this.togglefavorite(info.id)}>
-                                {this.state.showFavorite ? <Icon name={this.state.favorite ? "heart" : "heart-o"} size={12} color="#000000" /> : null }
+                                <Icon name={this.props.favorites.indexOf(this.props.id) > -1 ? "heart" : "heart-o"} size={12} color="deeppink" />
                             </TouchableOpacity>
                         </View>   
                         <View style={{flexDirection:'row', justifyContent:'space-between'}}>
@@ -135,3 +125,5 @@ export default class LocationInfo extends Component{
         );
     }
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(LocationInfo);

@@ -10,7 +10,6 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
-import { TabNavigator}  from 'react-navigation';
 import SearchBar from './searchBar.js';
 import SearchResult from './searchResult.js';
 import Reactotron from 'reactotron-react-native'
@@ -18,6 +17,7 @@ import LocationInfo from './locationInfo.js'
 import { bindActionCreators, connect } from 'react-redux';
 import { search } from '../actions/search.js';
 import { setActiveLocation, setHighlightedLocations } from '../actions/map.js';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 // Search shortcuts (filter according to time of day)
@@ -33,11 +33,17 @@ Snacks
 function mapStateToProps(state) { return { searchTerms: state.search.searchTerms }}
 function mapDispatchToProps (dispatch) { return { 
 	search: (searchTerms) => dispatch(search(searchTerms)), 
-	setActiveLocation: (id) => dispatch(setActiveLocation(id)), 
+	setActiveLocation: (id) => dispatch(setActiveLocation(id, true)), 
 	setHighlightedLocations: (ids) => dispatch(setHighlightedLocations(ids)) 
 } }
 
 class Search extends Component {
+    static navigationOptions = {
+        tabBarIcon: ({ tintColor }) => (
+            <Icon name="search" size={16} color={'white'} />
+        ),
+      };
+	  
 	constructor(props)
 	{
 		super(props);
@@ -49,10 +55,6 @@ class Search extends Component {
 			searchResults:<Text />,
 		};
 	}	
-	
-	static navigationOptions = {
-		tabBarLabel: 'Search',		
-	}
 	
 	componentWillMount()
 	{
@@ -87,13 +89,13 @@ class Search extends Component {
 	
 	mapResult(result) {
 		//this.props.navigation.navigate('Map', { markedLocationIds: [ result.id ], selectedLocationId: result.id });
-		this.props.setActiveLocation(result.id);
+		this.props.setActiveLocation(result.id, true);
 		this.props.navigation.navigate('Map');
 	}
 
 	mapAllResults(resultFeatures) {
 		//this.props.navigation.navigate('Map', { markedLocationIds: resultFeatures.map(r => r.id), selectedLocationId: null });
-		this.props.setActiveLocation(resultFeatures[0].id);
+		this.props.setActiveLocation(resultFeatures[0].id, false);
 		this.props.setHighlightedLocations(resultFeatures.map((f) => { return f.id }));
 		this.props.navigation.navigate('Map');
 	}
@@ -123,12 +125,12 @@ class Search extends Component {
 		}
 		return (<View>
 					<SearchBar floating={false} />
-					<ScrollView style={{height:'80%'}}>
+					<ScrollView style={{height:'78%'}}>
 							{resultJSX.length > 0 ? resultJSX : <Text style={{marginTop: 20, textAlign: 'center', fontSize:16}}>No results found</Text>}
 					</ScrollView>
-					{resultJSX.length > 0 ? 
+					{resultFeatures.length > 0 ? 
 						<TouchableOpacity onPress={() => this.mapAllResults(resultFeatures)}>
-							<Text style={{textAlign:'center'}}>Show Results on Map</Text>
+							<Text style={{backgroundColor:'#dddddd', textAlign:'center', height:'22%', padding:5, margin:5, borderWidth:0.5, borderColor:'black', borderRadius:8}}>Show Results on Map</Text>
 						</TouchableOpacity> 
 					: null}
 				</View>);
