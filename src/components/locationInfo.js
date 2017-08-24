@@ -67,7 +67,11 @@ class LocationInfo extends Component{
 
 	setCurrentPosition()
 	{
-        navigator.geolocation.getCurrentPosition((position) => this.setState({latitude: position.coords.latitude, longitude: position.coords.longitude}), null, null);
+        navigator.geolocation.getCurrentPosition(
+            (position) => this.setState({latitude: position.coords.latitude, longitude: position.coords.longitude}), // success callback
+            null, // error callback
+            null //{ enableHighAccuracy:false} // options - TODO: enable high accuracy = true for live
+        );
         
     }
 

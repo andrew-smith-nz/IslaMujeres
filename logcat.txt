@@ -1,0 +1,1073 @@
+--------- beginning of main
+08-23 16:33:37.684  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:33:37.685  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+--------- beginning of system
+08-23 16:33:39.092  3650  4234 E Watchdog: !@Sync 29977 [23_Aug_16_33_39.091]
+08-23 16:33:39.373  3650  3867 D InputReader: Input event(4): value=1 when=899534941757000
+08-23 16:33:39.373  3650  3867 D InputReader: Input event(4): value=1 when=899534941757000
+08-23 16:33:39.373  3650  3867 I InputReader: Touch event's action is 0x0 (deviceType=0) [pCnt=1, s=0.55497 ] when=899534941757000
+08-23 16:33:39.374  3650  3866 I InputDispatcher: Delivering touch to (4097): action: 0x4, toolType: 1
+08-23 16:33:39.374  3650  3866 I InputDispatcher: Delivering touch to (4976): action: 0x0, toolType: 1
+08-23 16:33:39.374  3650  3866 I InputDispatcher: Delivering touch to (4097): action: 0x0, toolType: 1
+08-23 16:33:39.375  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: ViewPostImeInputStage processPointer 0
+08-23 16:33:39.387  4976  4976 D capture : ----destroy
+08-23 16:33:39.387  4976  4976 I Launcher.HomeView: stopCaptureByItemClick
+08-23 16:33:39.420  3650  3867 D InputReader: Input event(4): value=0 when=899534988907000
+08-23 16:33:39.420  3650  3867 D InputReader: Input event(4): value=0 when=899534988907000
+08-23 16:33:39.420  3650  3867 I InputReader: Touch event's action is 0x1 (deviceType=0) [pCnt=1, s=] when=899534988907000
+08-23 16:33:39.420  3650  3866 I InputDispatcher: Delivering touch to (4976): action: 0x1, toolType: 1
+08-23 16:33:39.420  3650  3866 I InputDispatcher: Delivering touch to (4097): action: 0x1, toolType: 1
+08-23 16:33:39.420  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: ViewPostImeInputStage processPointer 1
+08-23 16:33:39.436  4976  4976 D capture : ----destroy
+08-23 16:33:39.442  4976  4976 D Launcher.Workspace: exitWidgetResizeMode. isClearResizeFrame is false
+08-23 16:33:39.453  4976  4976 D MenuView: MenuView collectShowAllAppsAnimators
+08-23 16:33:39.456  4976  4976 D Launcher.HomeView: HomeView collectShowAllAppsAnimators
+08-23 16:33:39.457 31835 15029 I PBSessionCacheImpl: Deleted sessionId[140013314200555175] from persistence.
+08-23 16:33:39.458  4976  4976 D Launcher.MenuAppsGrid: ChangeMobileKeyboard:false mCurrentOrientation:1 mRequestedOrientation:1 newConfig.orientation:1 isShown:true
+08-23 16:33:39.460 31835 31835 I MicroDetector: Keeping mic open: false
+08-23 16:33:39.461  4976  4976 D Launcher: MenuView is VISIBLE
+08-23 16:33:39.462 31835 15020 I DeviceStateChecker: DeviceStateChecker cancelled
+08-23 16:33:39.463 31835 15029 I AudioController: internalShutdown
+08-23 16:33:39.466 31835  6010 I MicroRecognitionRunner: Stopping hotword detection.
+08-23 16:33:39.468  4976  4976 D Launcher.MenuAppsGrid: handleStateChange: (new)NORMAL(old)UNKNOWN
+08-23 16:33:39.470 31835 15029 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.speech.audio.af@3955877
+08-23 16:33:39.471 31835 15028 E AudioRecord-JNI: Error -4 during AudioRecord native read
+08-23 16:33:39.473  3124 23967 I APM_AudioPolicyManager: stopInput() input 23182
+08-23 16:33:39.473  4976  4976 D InputMethodManager: HSI from window - flag : 0 Pid : 4976
+08-23 16:33:39.474  3650  4867 D SamsungAlarmManager: setExact Intent (T:3/F:0/AC:false) 20170823T163349 - CU:10063/CP:31835
+08-23 16:33:39.474  3650  4867 I SamsungAlarmManager: setLocked to kernel - T:3 / 20170823T163349, SetElapsed=2680748183, nowELAPSED=2680738191
+08-23 16:33:39.475  4976  4976 V InputMethodManager: Starting input: tba=android.view.inputmethod.EditorInfo@f7cc7b8 nm : com.sec.android.app.launcher ic=null
+08-23 16:33:39.475  4976  4976 I InputMethodManager: [IMM] startInputInner - mService.startInputOrWindowGainedFocus
+08-23 16:33:39.476  3650  6201 D InputTransport: Input channel constructed: fd=602
+08-23 16:33:39.476  3650  6201 D InputTransport: Input channel destroyed: fd=602
+08-23 16:33:39.477  4976  4976 D InputTransport: Input channel constructed: fd=83
+08-23 16:33:39.477  4976  4976 D InputTransport: Input channel destroyed: fd=77
+08-23 16:33:39.477  3650  4955 V InputMethodManagerService: Client requesting input be hidden, flags : 0
+08-23 16:33:39.477  3650  4955 D InputMethodManagerService: mDesktopModeManager null!
+08-23 16:33:39.477  3650  4955 V InputMethodManagerService: hideCurrentInputLocked - !shouldHideSoftInput
+08-23 16:33:39.477  4976  4976 D InputMethodManager: HSI from window - flag : 0 Pid : 4976
+08-23 16:33:39.478  3650 29598 V InputMethodManagerService: Client requesting input be hidden, flags : 0
+08-23 16:33:39.478  3650 29598 D InputMethodManagerService: mDesktopModeManager null!
+08-23 16:33:39.478  3650 29598 V InputMethodManagerService: hideCurrentInputLocked - !shouldHideSoftInput
+08-23 16:33:39.478  4976  4976 D InputMethodManager: HSI from window - flag : 0 Pid : 4976
+08-23 16:33:39.478  3124 17717 D audio_hw_primary: in_set_parameters: enter: kvpairs: routing=0
+08-23 16:33:39.478  3650  4865 V InputMethodManagerService: Client requesting input be hidden, flags : 0
+08-23 16:33:39.478  3650  4865 D InputMethodManagerService: mDesktopModeManager null!
+08-23 16:33:39.478  3650  4865 V InputMethodManagerService: hideCurrentInputLocked - !shouldHideSoftInput
+08-23 16:33:39.478  3124 17717 I samsungRecord: [samsungrecord] MicCalonoff 1
+08-23 16:33:39.478  3124 17717 V audio_hw_primary: in_set_parameters: exit: status(0)
+08-23 16:33:39.478  3124 17717 I audio_hw_primary: do_in_standby : in->standby 0
+08-23 16:33:39.478  4976  4976 D InputMethodManager: HSI from window - flag : 0 Pid : 4976
+08-23 16:33:39.479  3650 15025 V InputMethodManagerService: Client requesting input be hidden, flags : 0
+08-23 16:33:39.479  3650 15025 D InputMethodManagerService: mDesktopModeManager null!
+08-23 16:33:39.479  3650 15025 V InputMethodManagerService: hideCurrentInputLocked - !shouldHideSoftInput
+08-23 16:33:39.479  4976  4976 D InputMethodManager: HSI from window - flag : 0 Pid : 4976
+08-23 16:33:39.480  3650 27696 V InputMethodManagerService: Client requesting input be hidden, flags : 0
+08-23 16:33:39.480  3650 27696 D InputMethodManagerService: mDesktopModeManager null!
+08-23 16:33:39.480  3650 27696 V InputMethodManagerService: hideCurrentInputLocked - !shouldHideSoftInput
+08-23 16:33:39.485  3124 17717 V audio_hw_primary: select_devices output_scenario:-1 input_scenario:-1 out_snd_device 0x0 in_snd_device:0x0
+08-23 16:33:39.486  3124 17717 I audio_route: > audio_route_reset :
+08-23 16:33:39.486  3124 17717 I audio_route: > audio_route_update_mixer : +
+08-23 16:33:39.500  3124 17717 I audio_route: > audio_route_update_mixer : changed(5) -
+08-23 16:33:39.501  3124 17717 I audio_hw_primary: select_devices - 
+08-23 16:33:39.510  3124  3124 V audio_hw_primary: stop_voice_note_recording
+08-23 16:33:39.510  3124  3124 E audio_hw_primary: adev_close_input_stream, set jack_in to null
+08-23 16:33:39.513 31835 15014 I MicroRecognitionRunner: Detection finished
+08-23 16:33:39.676  3650  9027 V WindowManager: Relayout Window{d4bbc8ed0 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=0 req=1440x2560 WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#81910d02 pfl=0x20000 fmt=-2 wanim=0x103038a vsysui=0x600 needsMenuKey=2 dimDuration=300 naviIconColor=0 sfl=0x40}
+08-23 16:33:39.691  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: Relayout returned: oldFrame=[0,0][1440,2560] newFrame=[0,0][1440,2560] result=0x1 surface={isValid=true 547414711296} surfaceGenerationChanged=false
+08-23 16:33:39.702  3100  3100 D Layer   : applyEffect ## com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity
+08-23 16:33:39.702  3100  3100 D Layer   : applyEffect ## animMode=3, target=2, pixType=1
+08-23 16:33:39.708  3100  3100 D Layer   : applyEffect ## pixAnim anim=13, timeMs=0, value=0.00, interp=0
+08-23 16:33:39.708  3100  3100 D Layer   : applyEffect ## pixAnim anim=13, timeMs=300, value=176.00, interp=3
+08-23 16:33:39.708  3100  3100 D Layer   : applyEffect ## pixAnim anim=14, timeMs=0, value=0.00, interp=0
+08-23 16:33:39.708  3100  3100 D Layer   : applyEffect ## pixAnim anim=14, timeMs=300, value=-10.00, interp=3
+08-23 16:33:39.840  4976  4976 D Launcher: finishShowAllApps
+08-23 16:33:39.956  3021  3021 E audit   : type=1400 audit(1503524019.941:57698): avc:  denied  { read } for  pid=28476 comm="BgHandler" name="28427-0" dev="debugfs" ino=16627764 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SECMOBILE_7.0_0005
+08-23 16:33:40.016  3650  3867 D InputReader: Input event(4): value=1 when=899535584751000
+08-23 16:33:40.016  3650  3867 D InputReader: Input event(4): value=1 when=899535584751000
+08-23 16:33:40.016  3650  3867 I InputReader: Touch event's action is 0x0 (deviceType=0) [pCnt=1, s=0.55498 ] when=899535584751000
+08-23 16:33:40.017  3650  3866 I InputDispatcher: Delivering touch to (4097): action: 0x4, toolType: 1
+08-23 16:33:40.017  3650  3866 I InputDispatcher: Delivering touch to (4976): action: 0x0, toolType: 1
+08-23 16:33:40.017  3650  3866 I InputDispatcher: Delivering touch to (4097): action: 0x0, toolType: 1
+08-23 16:33:40.074  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: ViewPostImeInputStage processPointer 0
+08-23 16:33:40.086  4976  4976 I Launcher.PagedView: determineScrollingStart : mTouchState=1, mIsPageMoving=true
+08-23 16:33:40.087  4976  5146 W OpenGLRenderer: Incorrectly called buildLayer on View: CellLayoutChildren, destroying layer...
+08-23 16:33:40.087  4976  5146 W OpenGLRenderer: Incorrectly called buildLayer on View: CellLayoutChildren, destroying layer...
+08-23 16:33:40.087  4976  5146 W OpenGLRenderer: Incorrectly called buildLayer on View: CellLayoutChildren, destroying layer...
+08-23 16:33:40.087  4976  5146 W OpenGLRenderer: Incorrectly called buildLayer on View: CellLayoutChildren, destroying layer...
+08-23 16:33:40.170  3650  3867 D InputReader: Input event(4): value=0 when=899535738830000
+08-23 16:33:40.170  3650  3867 D InputReader: Input event(4): value=0 when=899535738830000
+08-23 16:33:40.170  3650  3867 I InputReader: Touch event's action is 0x1 (deviceType=0) [pCnt=1, s=] when=899535738830000
+08-23 16:33:40.170  3650  3866 I InputDispatcher: Delivering touch to (4976): action: 0x1, toolType: 1
+08-23 16:33:40.170  3650  3866 I InputDispatcher: Delivering touch to (4097): action: 0x1, toolType: 1
+08-23 16:33:40.171  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: ViewPostImeInputStage processPointer 1
+08-23 16:33:40.183  3650  6921 D GameManagerService: identifyGamePackage. com.sec.android.app.launcher
+08-23 16:33:40.185  3650  6921 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 800000  uid : 1000  pid : 3650  pkgName : GESTURE_DETECTED@CPU_MIN@57
+08-23 16:33:40.688  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:33:40.815  3650  3867 D InputReader: Input event(4): value=1 when=899536383526000
+08-23 16:33:40.815  3650  3867 D InputReader: Input event(4): value=1 when=899536383526000
+08-23 16:33:40.815  3650  3867 I InputReader: Touch event's action is 0x0 (deviceType=0) [pCnt=1, s=0.55499 ] when=899536383526000
+08-23 16:33:40.815  3650  3866 I InputDispatcher: Delivering touch to (4097): action: 0x4, toolType: 1
+08-23 16:33:40.815  3650  3866 I InputDispatcher: Delivering touch to (4976): action: 0x0, toolType: 1
+08-23 16:33:40.815  3650  3866 I InputDispatcher: Delivering touch to (4097): action: 0x0, toolType: 1
+08-23 16:33:40.815  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: ViewPostImeInputStage processPointer 0
+08-23 16:33:40.843  4668  4668 D io_stats: !@   8,0 r 71576989 2179688500 w 8058461 161207060 d 1074071 145526596 f 2408118 2407913 iot 23634520 16779358 th 61440 61440 61484 pt 400 inp 0 0 899536.412
+08-23 16:33:40.847  3650  4930 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+08-23 16:33:40.847  3650  4930 D BatteryService: level:48, scale:100, status:2, health:2, present:true, voltage: 3891, temperature: 349, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303690, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+08-23 16:33:40.847  3650  4930 D BatteryService: online:6, current avg:457, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_now:310
+08-23 16:33:40.847  3650  3650 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+08-23 16:33:40.849  3650  3650 V UiModeManager: updateLocked: null action, mDockState=0, category=null
+08-23 16:33:40.849  3650  3650 D UiModeManager: updateConfigurationLocked: mDockState=0; mCarMode=false; mNightMode=1; uiMode=17
+08-23 16:33:40.849  3650  3650 D GameManagerService: new battery level: 48
+08-23 16:33:40.850  4097  4097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+08-23 16:33:40.852  4097  4097 D PowerUI : priorPlugType = 2 mPlugType =  2
+08-23 16:33:40.852  4097  4097 D PowerUI.Notification: showChargingNotice oldChargingType : 1 currentChargingType : 1 oldChargingTime : 5946000 mChargingTime : 5946000
+08-23 16:33:40.853  4097  4097 D PowerUI.Notification: There is no change about charging status, so return!
+08-23 16:33:40.853  4976  4976 I Launcher.PagedView: determineScrollingStart : mTouchState=0, mIsPageMoving=false
+08-23 16:33:40.853  4097  4097 D KeyguardUpdateMonitor: handleBatteryUpdate
+08-23 16:33:40.854  4035  4035 V HeadsetService: HeadsetService - Received Intent.ACTION_BATTERY_CHANGED
+08-23 16:33:40.854  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:33:40.854  4035  4494 D HeadsetStateMachine: Disconnected process message: 10, size: 0
+08-23 16:33:40.854  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:33:40.855  4097  4097 D Tile.FlashlightTile: ACTION_BATTERY_CHANGED - Level :: 48, emEnabled :: false
+08-23 16:33:40.864  4976  4976 I Launcher.PagedView: determineScrollingStart : mTouchState=0, mIsPageMoving=false
+08-23 16:33:40.881  4976  4976 I Launcher.PagedView: determineScrollingStart : mTouchState=0, mIsPageMoving=false
+08-23 16:33:40.886  3650  3867 D InputReader: Input event(4): value=0 when=899536454606000
+08-23 16:33:40.886  3650  3867 D InputReader: Input event(4): value=0 when=899536454606000
+08-23 16:33:40.886  3650  3867 I InputReader: Touch event's action is 0x1 (deviceType=0) [pCnt=1, s=] when=899536454606000
+08-23 16:33:40.886  3650  3866 I InputDispatcher: Delivering touch to (4976): action: 0x1, toolType: 1
+08-23 16:33:40.886  3650  3866 I InputDispatcher: Delivering touch to (4097): action: 0x1, toolType: 1
+08-23 16:33:40.886  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: ViewPostImeInputStage processPointer 1
+08-23 16:33:40.887  4976  4976 D MenuView: visible = false isExit = false
+08-23 16:33:40.915  3650 27696 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 2100000  uid : 1000  pid : 3650  pkgName : APP_LAUNCH@CPU_MIN@7254
+08-23 16:33:40.919  4976  4976 D ActivityOptions: semMakeCustomScaleUpAnimation, width : 348, height : 424, opts.mStartX : 23, opts.mStartY : 2016
+08-23 16:33:40.933  3650 27700 I ActivityManager: START u0 {act=android.intent.action.MAIN typ=null flg=0x10200000 cmp=ComponentInfo{com.islamujeres/com.islamujeres.MainActivity}} from uid 10061 on display 0
+08-23 16:33:40.937  3650 27700 D ActivityManager: ActivityRecord() Constructor : multiScreenAttrs=MultiScreenAttrs{mDisplayId=0, mBaseDisplayId=0, mBaseActivity=false}
+08-23 16:33:40.938  3650 27700 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 2100000  uid : 1000  pid : 3650  pkgName : AMS_APP_SWITCH@CPU_MIN@19
+08-23 16:33:40.938  3650 27700 D ActivityManagerPerformance: AMP_acquire() APP_SWITCH
+08-23 16:33:40.939  3650  6921 D TelephonyManager: getAllCellInfo : Caller (PID / UID / TID): 3650 / 1000 / 6921
+08-23 16:33:40.940  3650 27700 D ActivityManager: computeStackFocus: stackId=1
+08-23 16:33:40.940  3650 27700 D ActivityManager: computeStackFocus: New stack r=ActivityRecord{fa18dbdd0 u0 com.islamujeres/.MainActivity t-1} stackId=1
+08-23 16:33:40.940  3650 27700 D ActivityTrigger: Activity is Triggerred in full screen 
+08-23 16:33:40.943  3650 27700 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:40.943  3650 27700 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:40.943  3650 27700 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:40.943  3650 27700 D ActivityManager: moveToFront() : reason=startedActivity setFocusedActivity isAttached=true TaskRecord{dde48b9d0 #947 A=com.islamujeres U=0 StackId=1 sz=1}
+08-23 16:33:40.946  3650 27700 D ActivityManager: setFocusStackUnchecked: reason=startedActivity setFocusedActivity focusCandidate=ActivityStack{47b2197d0 stackId=1, 43 tasks} caller=com.android.server.am.ActivityStack.moveToFront:875 com.android.server.am.ActivityStackSupervisor.moveActivityStackToFront:2006 
+08-23 16:33:40.947  3650 27700 D InputDispatcher: Focused application set to: xxxx
+08-23 16:33:40.948  3650 27700 D InputDispatcher: Focus left window: 4976
+08-23 16:33:40.948  3650 27700 D ActivityManager: resumeTopActivityInnerLocked() : #1 prevTask=TaskRecord{dde48b9d0 #947 A=com.islamujeres U=0 StackId=1 sz=1} next=ActivityRecord{fa18dbdd0 u0 com.islamujeres/.MainActivity t947} mFocusedStack=ActivityStack{47b2197d0 stackId=1, 43 tasks}
+08-23 16:33:40.948  3650 27700 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+08-23 16:33:40.949  3650 27700 D GameManagerService: there is not sem_perfomance_mode on setting
+08-23 16:33:40.954  3650  3677 D WindowManager: addWindow: android.view.ViewRootImpl$W@6e5c998 displayId=0
+08-23 16:33:40.954  3650  3677 D InputTransport: Input channel constructed: fd=601
+08-23 16:33:40.954  3650  3677 D InputTransport: Input channel constructed: fd=602
+08-23 16:33:40.955  3650  3677 D WindowManager: openInputChannel mInputChannel: 6d355f1 Starting com.islamujeres (server)
+08-23 16:33:40.955  3650  3677 D ViewRootImpl@406b77b[islamujeres]: setView = DecorView@59135d6[islamujeres] touchMode=true
+08-23 16:33:40.957  4976  4976 D Launcher: onPause, Launcher: 175582605
+08-23 16:33:40.957  4976  4976 D Launcher.HomeView: onPause
+08-23 16:33:40.957  4976  4976 D Launcher.Workspace: exitWidgetResizeMode. isClearResizeFrame is false
+08-23 16:33:40.958  3650  3667 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:40.958  3650  3667 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:40.958  3650  3667 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:40.958  3650 27695 D ActivityManager: clearAppIconInfo()
+08-23 16:33:40.959  3650 27695 D ActivityManager: resumeTopActivityInnerLocked() : #1 prevTask=TaskRecord{c7a70f8d0 #67 A=com.sec.android.app.launcher U=0 StackId=0 sz=1} next=ActivityRecord{fa18dbdd0 u0 com.islamujeres/.MainActivity t947} mFocusedStack=ActivityStack{47b2197d0 stackId=1, 43 tasks}
+08-23 16:33:40.959  3650 27695 D ActivityManager: applyOptionsLocked(), pendingOptions : ActivityOptions(113201239), mPackageName=com.sec.android.app.launcher, mAnimationType=1001, mStartX=23, mStartY=2016, mWidth=348, mHeight=424
+08-23 16:33:40.959  3650 27695 E ActivityManager: applyOptionsLocked: pendingOptions.getStartX()=23pendingOptions.getStartY()=2016
+08-23 16:33:40.959  3650 27695 D SamsungWindowManager: overridePendingAppTransitionCustomScaleUp, mNextAppTransitionStartX : 23, mNextAppTransitionStartY : 2016, mNextAppTransitionStartWidth : 348, mNextAppTransitionStartHeight : 424
+08-23 16:33:40.959  3650 27695 D ActivityManager: applyOptionsLocked, ANIM_CUSTOM_SCALE_UP, x : 23, y : 2016, isHomeItem : false
+08-23 16:33:40.959  3650 27695 D ActivityManager: applyOptionsLocked, ANIM_CUSTOM_SCALE_UP, task.getRootActivity() : ActivityRecord{fa18dbdd0 u0 com.islamujeres/.MainActivity t947}, task.getTaskToReturnTo() : 1
+08-23 16:33:40.959  3650 27695 D ActivityManager: setAppIconInfo(), x : 23, y : 2016, width : 348, height : 424, isHomeItem : false
+08-23 16:33:40.960  3650 27695 D MountService: getExternalStorageMountMode : 3
+08-23 16:33:40.960  3650 27695 D MountService: getExternalStorageMountMode : 3
+08-23 16:33:40.960  3650 27695 D MountService: getExternalStorageMountMode : final mountMode=3, uid : 10375, packageName : com.islamujeres
+08-23 16:33:40.967  3650  3677 D ViewRootImpl@406b77b[islamujeres]: dispatchAttachedToWindow
+08-23 16:33:40.968  3650  3677 V WindowManager: Relayout Window{6d355f1d0 u0 Starting com.islamujeres}: viewVisibility=0 req=1440x2464 WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#81830118 pfl=0x11 wanim=0x1030465 vsysui=0x600 needsMenuKey=2 naviIconColor=0}
+08-23 16:33:40.969 17806 17806 E Zygote  : v2
+08-23 16:33:40.969 17806 17806 I libpersona: KNOX_SDCARD checking this for 10375
+08-23 16:33:40.969 17806 17806 I libpersona: KNOX_SDCARD not a persona
+08-23 16:33:40.970  3650 27695 I ActivityManager: Start proc 17806:com.islamujeres/u0a375 for activity com.islamujeres/.MainActivity
+08-23 16:33:40.970 17806 17806 E Zygote  : accessInfo : 0
+08-23 16:33:40.970  3100  3100 I SurfaceFlinger: id=32711 createSurf (1x1),1 flag=404, jslamujeres
+08-23 16:33:40.972 17806 17806 W SELinux : SELinux selinux_android_compute_policy_index : Policy Index[2],  Con:u:r:zygote:s0 RAM:SEPF_SECMOBILE_7.0_0005, [-1 -1 -4 -1 0 1]
+08-23 16:33:40.973 17806 17806 I SELinux : SELinux: seapp_context_lookup: seinfo=untrusted, level=s0:c512,c768, pkgname=com.islamujeres 
+08-23 16:33:40.976 17806 17806 I art     : Late-enabling -Xcheck:jni
+08-23 16:33:40.986  3650  3677 D ViewRootImpl@406b77b[islamujeres]: Relayout returned: oldFrame=[0,0][0,0] newFrame=[0,0][1440,2560] result=0x27 surface={isValid=true 516619931136} surfaceGenerationChanged=true
+08-23 16:33:40.987  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: MSG_WINDOW_FOCUS_CHANGED 0
+08-23 16:33:40.989  4976  4976 D SEM_CLIP_SemClipboardManager: isCocktailBarDisplayed : false
+08-23 16:33:40.994 17806 17806 D TimaKeyStoreProvider: TimaKeyStore is not enabled: cannot add TimaSignature Service and generateKeyPair Service
+08-23 16:33:40.996  3650 27694 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:40.996  3650 27694 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:40.996  3650 27694 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:40.996  3650 27694 I ActivityManager: DSS on for com.islamujeres and scale is 1.0
+08-23 16:33:40.997  3650 27694 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:40.997  3650 27694 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:40.997  3650 27694 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:40.998  3650 27694 V WindowManager: rotationForOrientationLw(orient=-1, last=0); user=0 USER_ROTATION_LOCKED sensorRotation=-1 mLidState=-1 mDockMode=0 mHdmiPlugged=false
+08-23 16:33:41.001  3650 27694 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:41.001  3650 27694 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:41.001  3650 27694 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:41.007  3650 27694 D GameManagerService: there is not sem_perfomance_mode on setting
+08-23 16:33:41.007  3650  3650 D GameManagerService: NotifyRunnable. pkg: com.islamujeres, type: 4, isMinimized: false, isTunableApp: false
+08-23 16:33:41.007  3650  3650 D GameManagerService: do nothing. mKillNotiCount: 3
+08-23 16:33:41.009  4899  4917 D ForegroundUtils: could not check pending caller
+08-23 16:33:41.010  3650  6921 D GamePkgDataHelper: getGamePkgData(). com.islamujeres
+08-23 16:33:41.010  3650  6921 D GameManagerService: identifyGamePackage. com.islamujeres
+08-23 16:33:41.012  3650  6921 D GameManagerService: identifyGamePackage. com.islamujeres
+08-23 16:33:41.014  3650  6921 D TelephonyManager: getAllCellInfo : Caller (PID / UID / TID): 3650 / 1000 / 6921
+08-23 16:33:41.019  3650  3677 D WindowManager: finishDrawingWindow: Window{6d355f1d0 u0 Starting com.islamujeres} mDrawState=DRAW_PENDING
+08-23 16:33:41.021  3650  3677 D SamsungWindowManager: createSamsungCustomAnimationLocked, mNextAppTransitionStartX : 23, mNextAppTransitionStartY : 2016, mNextAppTransitionStartWidth : 348, mNextAppTransitionStartHeight : 424
+08-23 16:33:41.022  3650  3677 D SamsungWindowManager: createSamsungCustomAnimationLocked, mNextAppTransitionStartX : 23, mNextAppTransitionStartY : 2016, mNextAppTransitionStartWidth : 348, mNextAppTransitionStartHeight : 424
+08-23 16:33:41.022  3650  6921 D GameManagerService: identifyGamePackage. com.islamujeres
+08-23 16:33:41.022  3650  6921 D GameManagerService: identifyGamePackage. com.islamujeres
+08-23 16:33:41.023  3650  3668 D WindowManager: set systemUiVisibility of statusbar : vis= 0x608
+08-23 16:33:41.042  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: mHardwareRenderer.destroy()#1
+08-23 16:33:41.044  3650  6039 V WindowManager: Relayout Window{d4bbc8ed0 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=8 req=1440x2560 WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#81910d02 pfl=0x20000 fmt=-2 wanim=0x103038a vsysui=0x600 needsMenuKey=2 dimDuration=300 naviIconColor=0 sfl=0x40}
+08-23 16:33:41.045 17806 17806 V fb-UnpackingSoSource: locked dso store /data/user/0/com.islamujeres/lib-main
+08-23 16:33:41.046 17806 17806 I fb-UnpackingSoSource: dso store is up-to-date: /data/user/0/com.islamujeres/lib-main
+08-23 16:33:41.046 17806 17806 V fb-UnpackingSoSource: releasing dso store lock for /data/user/0/com.islamujeres/lib-main
+08-23 16:33:41.048  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: Relayout returned: oldFrame=[0,0][1440,2560] newFrame=[0,0][1440,2560] result=0x5 surface={isValid=false 0} surfaceGenerationChanged=true
+08-23 16:33:41.094 17806 17806 D ReactNative: ReactInstanceManager.ctor()
+08-23 16:33:41.111 17806 17806 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-23 16:33:41.119  3650  3697 E SensorService: getSensorList a sensor (MAX86900) without holding its required permission: com.samsung.permission.SSENSOR
+08-23 16:33:41.119  3650  3697 I SensorService: Skipped sensor MAX86900 because it requires permission com.samsung.permission.SSENSOR and app op -1
+08-23 16:33:41.119  3650  3697 E SensorService: getSensorList a sensor (HRM Ambient Light Canceling) without holding its required permission: com.samsung.permission.HRM_EXT
+08-23 16:33:41.119  3650  3697 I SensorService: Skipped sensor HRM Ambient Light Canceling because it requires permission com.samsung.permission.HRM_EXT and app op -1
+08-23 16:33:41.120  3650  3697 W ServiceManager: Permission failure: android.permission.BODY_SENSORS from uid=10375 pid=17806
+08-23 16:33:41.120  3650  3697 E SensorService: getSensorList a sensor (HRMLED IR) without holding its required permission: android.permission.BODY_SENSORS
+08-23 16:33:41.120  3650  3697 I SensorService: Skipped sensor HRMLED IR because it requires permission android.permission.BODY_SENSORS and app op 56
+08-23 16:33:41.120  3650  3697 W ServiceManager: Permission failure: android.permission.BODY_SENSORS from uid=10375 pid=17806
+08-23 16:33:41.120  3650  3697 E SensorService: getSensorList a sensor (HRMLED RED) without holding its required permission: android.permission.BODY_SENSORS
+08-23 16:33:41.120  3650  3697 I SensorService: Skipped sensor HRMLED RED because it requires permission android.permission.BODY_SENSORS and app op 56
+08-23 16:33:41.120  3650  3697 E SensorService: getSensorList a sensor (HRM Proximity detecting) without holding its required permission: com.samsung.permission.HRM_EXT
+08-23 16:33:41.120  3650  3697 I SensorService: Skipped sensor HRM Proximity detecting because it requires permission com.samsung.permission.HRM_EXT and app op -1
+08-23 16:33:41.120  3650  3697 E SensorService: getSensorList a sensor (HRM Sensor) without holding its required permission: com.samsung.permission.SSENSOR
+08-23 16:33:41.120  3650  3697 I SensorService: Skipped sensor HRM Sensor because it requires permission com.samsung.permission.SSENSOR and app op -1
+08-23 16:33:41.120  3650  3697 W ServiceManager: Permission failure: android.permission.BODY_SENSORS from uid=10375 pid=17806
+08-23 16:33:41.120  3650  3697 E SensorService: getSensorList a sensor (HeartRate Sensor) without holding its required permission: android.permission.BODY_SENSORS
+08-23 16:33:41.120  3650  3697 I SensorService: Skipped sensor HeartRate Sensor because it requires permission android.permission.BODY_SENSORS and app op 56
+08-23 16:33:41.120  3650  3697 E SensorService: getSensorList a sensor (Sensor Diagnostic Monitor) without holding its required permission: com.samsung.permission.SSENSOR
+08-23 16:33:41.120  3650  3697 I SensorService: Skipped sensor Sensor Diagnostic Monitor because it requires permission com.samsung.permission.SSENSOR and app op -1
+08-23 16:33:41.129  3650 27695 I Sensors : Acc old sensor_state 16384, new sensor_state : 16385 en : 1
+08-23 16:33:41.130 17806 17806 D SensorManager: registerListener :: 0, MPU6500 Acceleration Sensor, 66667, 0,  
+08-23 16:33:41.141  3650  3980 D MdnieScenarioControlService:  packageName : com.islamujeres    className : com.islamujeres.MainActivity
+08-23 16:33:41.147  3145  3642 D EnterpriseController: netId is 0
+08-23 16:33:41.147  3145  3642 D Netd    : getNetworkForDns: using netid 792 for uid 10375
+08-23 16:33:41.147  3145  3642 D DnsProxyListener: DNSDBG::dns addrinfo af 2
+08-23 16:33:41.147  3145  3642 D EnterpriseController: netId is 0
+08-23 16:33:41.147  3145  3642 D Netd    : getNetworkForDns: using netid 792 for uid 10375
+08-23 16:33:41.147  3145  3642 D DnsProxyListener: DNSDBG::dns addrinfo af 2
+08-23 16:33:41.153 17806 17806 D ReactNative: ReactInstanceManager.createReactContextInBackground()
+08-23 16:33:41.153 17806 17806 D ReactNative: ReactInstanceManager.recreateReactContextInBackgroundInner()
+08-23 16:33:41.155 17806 17806 D ReactNative: ReactInstanceManager.onJSBundleLoadedFromServer()
+08-23 16:33:41.168 17806 17806 I art     : Thread[1,tid=17806,Native,Thread*=0xe4205400,peer=0x7645b730,"main"] recursive attempt to load library "/data/app/com.islamujeres-2/lib/arm/libfb.so"
+08-23 16:33:41.170 17806 17806 D ReactNative: ReactInstanceManager.recreateReactContextInBackground()
+08-23 16:33:41.170 17806 17806 D ReactNative: ReactInstanceManager.runCreateReactContextOnNewThread()
+08-23 16:33:41.172 17806 17832 D ReactNative: ReactInstanceManager.createReactContext()
+08-23 16:33:41.182  3650  3650 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 800000  uid : 1000  pid : 3650  tag : GESTURE_DETECTED@CPU_MIN@57
+08-23 16:33:41.185 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTGroupViewManager
+08-23 16:33:41.186 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTGroupShadowNode
+08-23 16:33:41.189 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTShapeViewManager
+08-23 16:33:41.189 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTShapeShadowNode
+08-23 16:33:41.191 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTTextViewManager
+08-23 16:33:41.191 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTTextShadowNode
+08-23 16:33:41.192 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.picker.ReactDialogPickerManager
+08-23 16:33:41.198 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+08-23 16:33:41.200 17806 17806 W unknown:ReactNative: Packager connection already open, nooping.
+08-23 16:33:41.200 17806 17806 W unknown:ReactNative: Inspector connection already open, nooping.
+08-23 16:33:41.203 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+08-23 16:33:41.209 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.picker.ReactDropdownPickerManager
+08-23 16:33:41.210 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+08-23 16:33:41.215 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+08-23 16:33:41.217 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+08-23 16:33:41.219 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+08-23 16:33:41.224 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager
+08-23 16:33:41.226 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager$ReactSliderShadowNode
+08-23 16:33:41.227 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+08-23 16:33:41.229 17806 17806 D ViewRootImpl@2b04ba7[MainActivity]: ThreadedRenderer.create() translucent=false
+08-23 16:33:41.230 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+08-23 16:33:41.230 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.toolbar.ReactToolbarManager
+08-23 16:33:41.231  3650 15024 D WindowManager: addWindow: android.view.IWindow$Stub$Proxy@67929ae displayId=0
+08-23 16:33:41.231  3650 15024 D InputTransport: Input channel constructed: fd=604
+08-23 16:33:41.231  3650 15024 D InputTransport: Input channel constructed: fd=607
+08-23 16:33:41.232  3650 15024 D WindowManager: openInputChannel mInputChannel: abcdadc com.islamujeres/com.islamujeres.MainActivity (server)
+08-23 16:33:41.233  3650 15024 D InputTransport: Input channel destroyed: fd=607
+08-23 16:33:41.234 17806 17806 D InputTransport: Input channel constructed: fd=60
+08-23 16:33:41.234 17806 17806 D ViewRootImpl@2b04ba7[MainActivity]: setView = DecorView@7fa95c0[MainActivity] touchMode=true
+08-23 16:33:41.234  3650  3917 D ActivityManager: post active user change for 0 fullscreen true isHomeActivity() false
+08-23 16:33:41.234  3650  3917 D KnoxTimeoutHandler: postActiveUserChange [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 0
+08-23 16:33:41.234 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.webview.ReactWebViewManager
+08-23 16:33:41.234  3650  3650 D KnoxTimeoutHandler: handleActiveUserChange [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 0
+08-23 16:33:41.235 17806 17806 D ViewRootImpl@2b04ba7[MainActivity]: dispatchAttachedToWindow
+08-23 16:33:41.235  3650  3650 I KnoxTimeoutHandler: Shared devices show user statefalse
+08-23 16:33:41.237  3650  9027 V WindowManager: Relayout Window{abcdadcd0 u0 com.islamujeres/com.islamujeres.MainActivity}: viewVisibility=0 req=1440x2464 WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#81810100 wanim=0x1030465 vsysui=0x600 needsMenuKey=2 naviIconColor=0}
+08-23 16:33:41.238 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+08-23 16:33:41.239  3100  3100 I SurfaceFlinger: id=32712 createSurf (1x1),1 flag=404, NainActivit
+08-23 16:33:41.241 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTSurfaceViewManager
+08-23 16:33:41.242 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.art.ARTSurfaceViewShadowNode
+08-23 16:33:41.243 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+08-23 16:33:41.244 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+08-23 16:33:41.246 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+08-23 16:33:41.250 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+08-23 16:33:41.253  3650  9027 D InputDispatcher: Focus entered window: 17806
+08-23 16:33:41.255 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+08-23 16:33:41.256 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+08-23 16:33:41.257 17806 17806 D ViewRootImpl@2b04ba7[MainActivity]: Relayout returned: oldFrame=[0,0][0,0] newFrame=[0,0][1440,2560] result=0x27 surface={isValid=true -629727232} surfaceGenerationChanged=true
+08-23 16:33:41.257 17806 17806 D ViewRootImpl@2b04ba7[MainActivity]: mHardwareRenderer.initialize() mSurface={isValid=true -629727232} hwInitialized=true
+08-23 16:33:41.261 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+08-23 16:33:41.265 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+08-23 16:33:41.274 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+08-23 16:33:41.274 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+08-23 16:33:41.277 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+08-23 16:33:41.277 17806 17833 D libEGL  : loaded /vendor/lib/egl/libGLES_mali.so
+08-23 16:33:41.287 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.viewpager.ReactViewPagerManager
+08-23 16:33:41.290 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+08-23 16:33:41.291 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.mapbox.reactnativemapboxgl.ReactNativeMapboxGLManager
+08-23 16:33:41.296 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.mapbox.reactnativemapboxgl.RNMGLAnnotationViewManager
+08-23 16:33:41.299 17806 17806 D ViewRootImpl@2b04ba7[MainActivity]: MSG_RESIZED_REPORT: ci=Rect(0, 96 - 0, 0) vi=Rect(0, 96 - 0, 0) or=1
+08-23 16:33:41.299 17806 17806 D ViewRootImpl@2b04ba7[MainActivity]: MSG_WINDOW_FOCUS_CHANGED 1
+08-23 16:33:41.299 17806 17806 D ViewRootImpl@2b04ba7[MainActivity]: mHardwareRenderer.initializeIfNeeded()#2 mSurface={isValid=true -629727232}
+08-23 16:33:41.300 17806 17806 V InputMethodManager: Starting input: tba=android.view.inputmethod.EditorInfo@14d0625 nm : com.islamujeres ic=null
+08-23 16:33:41.300 17806 17806 I InputMethodManager: [IMM] startInputInner - mService.startInputOrWindowGainedFocus
+08-23 16:33:41.301  3650  6037 D InputMethodManagerService: windowGainedFocus mCurrentFocusedUserId - 0 and mSecureKeypadEnabled-false
+08-23 16:33:41.301  3650  6037 V InputMethodManagerService: windowGainedFocus: reason=WINDOW_FOCUS_GAIN client=android.os.BinderProxy@645d229 inputContext=null missingMethods= attribute=android.view.inputmethod.EditorInfo@f4067e5 nm = com.islamujeres controlFlags=#104 softInputMode=#110 windowFlags=#81810100
+08-23 16:33:41.301  3650  6037 V InputMethodManagerService: Unspecified window will hide input
+08-23 16:33:41.301  3650  6037 D InputMethodManagerService: mDesktopModeManager null!
+08-23 16:33:41.301  3650  6037 V InputMethodManagerService: hideCurrentInputLocked - !shouldHideSoftInput
+08-23 16:33:41.302  3650  6037 D InputTransport: Input channel constructed: fd=607
+08-23 16:33:41.302  3650  6037 D InputTransport: Input channel constructed: fd=608
+08-23 16:33:41.302  4976  4976 D InputTransport: Input channel destroyed: fd=83
+08-23 16:33:41.302  3650  6037 D InputTransport: Input channel destroyed: fd=608
+08-23 16:33:41.302  1825  2062 D InputTransport: Input channel constructed: fd=70
+08-23 16:33:41.302 17806 17832 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.mapbox.reactnativemapboxgl.SizeReportingShadowNode
+08-23 16:33:41.305  3650  4311 D InputTransport: Input channel constructed: fd=608
+08-23 16:33:41.306  3650  4311 D InputTransport: Input channel destroyed: fd=608
+08-23 16:33:41.308 17806 17818 D InputTransport: Input channel constructed: fd=65
+08-23 16:33:41.359 17806 17833 I OpenGLRenderer: Initialized EGL, version 1.4
+08-23 16:33:41.359 17806 17833 D OpenGLRenderer: Swap behavior 1
+08-23 16:33:41.359 17806 17832 D ReactNativeMapboxGLModule: Context com.facebook.react.bridge.ReactApplicationContext@3e437b2
+08-23 16:33:41.359 17806 17832 D ReactNativeMapboxGLModule: reactContext com.facebook.react.bridge.ReactApplicationContext@3e437b2
+08-23 16:33:41.360 17806 17832 D ReactNative: Initializing React Xplat Bridge.
+08-23 16:33:41.372 17806 17833 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2560]-format:1
+08-23 16:33:41.390 17806 17832 D ReactNative: Initializing React Xplat Bridge before initializeBridge
+08-23 16:33:41.449 17806 17832 D ReactNative: Initializing React Xplat Bridge after initializeBridge
+08-23 16:33:41.449 17806 17832 D ReactNative: CatalystInstanceImpl.runJSBundle()
+08-23 16:33:41.458  3650  3697 D WindowManager: finishDrawingWindow: Window{abcdadcd0 u0 com.islamujeres/com.islamujeres.MainActivity} mDrawState=DRAW_PENDING
+08-23 16:33:41.458 17806 17806 V InputMethodManager: Starting input: tba=android.view.inputmethod.EditorInfo@e0b2f75 nm : com.islamujeres ic=null
+08-23 16:33:41.459 17806 17806 D ReactNative: ReactInstanceManager.setupReactContext()
+08-23 16:33:41.459 17806 17806 D ReactNative: CatalystInstanceImpl.initialize()
+08-23 16:33:41.459 17806 17806 W unknown:ReactNative: Packager connection already open, nooping.
+08-23 16:33:41.459 17806 17806 W unknown:ReactNative: Inspector connection already open, nooping.
+08-23 16:33:41.460 17806 17806 D ReactNative: ReactInstanceManager.attachRootViewToInstance()
+08-23 16:33:41.464  3650  3677 D KnoxTimeoutHandler: notifyActivityDrawn [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 1
+08-23 16:33:41.464  3650  3650 D KnoxTimeoutHandler: activityDrawn [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 1
+08-23 16:33:41.465  3650  3650 I KnoxTimeoutHandler: SD activityfalse
+08-23 16:33:41.465  3650  3650 I KnoxTimeoutHandler: Fullscreen and mCurrent is not KNOX user. Hence hide keyguard
+08-23 16:33:41.466  3650  3677 I ActivityManager: Displayed com.islamujeres/.MainActivity: +506ms
+08-23 16:33:41.466  3650  3677 D ViewRootImpl@406b77b[islamujeres]: dispatchDetachedFromWindow
+08-23 16:33:41.466  3650  3677 D WindowManager: disposeInputChannel mInputChannel: 6d355f1 Starting com.islamujeres (server)
+08-23 16:33:41.469  3650  3677 D InputTransport: Input channel destroyed: fd=601
+08-23 16:33:41.469  3650  3677 D InputTransport: Input channel destroyed: fd=602
+08-23 16:33:41.469  3650  3677 D ViewRootImpl@3672112[ContainerKeyguardScrim]: mHardwareRenderer.destroy()#1
+08-23 16:33:41.502  4097  4097 D ImageWallpaper: onVisibilityChanged: mVisible, visible=true, false
+08-23 16:33:41.502  4097  4097 D ImageWallpaper: Visibility changed to visible=false
+08-23 16:33:41.504  3650  3677 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1800000  uid : 1000  pid : 3650  pkgName : AMS_RESUME_TAIL@CPU_MIN@25
+08-23 16:33:41.504  3650  3677 D ActivityManagerPerformance: AMP_acquire() TAIL
+08-23 16:33:41.505  3650  3677 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 2100000  uid : 1000  pid : 3650  tag : AMS_APP_SWITCH@CPU_MIN@19
+08-23 16:33:41.505  3650  3677 D ActivityManagerPerformance: AMP_release() APP_SWITCH
+08-23 16:33:41.506  3650  3677 D KnoxTimeoutHandler: notifyActivityDrawn [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 1
+08-23 16:33:41.506  3650  3650 D KnoxTimeoutHandler: activityDrawn [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 1
+08-23 16:33:41.507  3650  3650 I KnoxTimeoutHandler: SD activityfalse
+08-23 16:33:41.507  3650  3650 I KnoxTimeoutHandler: Fullscreen and mCurrent is not KNOX user. Hence hide keyguard
+08-23 16:33:41.511  3650 27696 D ActivityTrigger: ActivityTrigger activityStopTrigger 
+08-23 16:33:41.513  4976  4976 D MenuAppsGridFragment: onStop
+08-23 16:33:41.513  4976  4976 D Launcher.HomeView: onStop
+08-23 16:33:41.513  4976  4976 D capture : ----destroy
+08-23 16:33:41.527  4976  4976 D Launcher: onTrimMemory. Level: 20
+08-23 16:33:41.533  3650 27692 I WindowManager_SurfaceController: Destroying surface Surface(name=com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2905 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:1119 com.android.server.wm.WindowState.destroyOrSaveSurface:2627 com.android.server.wm.AppWindowToken.destroySurfaces:424 com.android.server.wm.AppWindowToken.destroySurfaces:388 com.android.server.wm.AppWindowToken.notifyAppStopped:468 com.android.server.wm.WindowManagerService.notifyAppStopped:5297 com.android.server.am.ActivityStack.activityStoppedLocked:1582 
+08-23 16:33:41.533  3100  3165 I SurfaceFlinger: id=32710 Removed MauncherAct (1/7)
+08-23 16:33:41.533  3100  3165 I SurfaceFlinger: id=32710 Removed MauncherAct (-2/7)
+08-23 16:33:41.536  4899  7291 D ForegroundUtils: could not check pending caller
+08-23 16:33:41.562  3650  6921 D SSRM:t  : SIOP:: AP = 410, PST = 449 (W:10), CP = 329, CUR = 389, LCD = 82
+08-23 16:33:41.666  3650  3980 D MdnieScenarioControlService:  packageName : com.islamujeres    className : com.islamujeres.MainActivity
+08-23 16:33:41.671  3650  3677 I WindowManager_SurfaceController: Destroying surface Surface(name=Starting com.islamujeres) called by com.android.server.wm.WindowStateAnimator.destroySurface:2905 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:1119 com.android.server.wm.WindowState.destroyOrSaveSurface:2627 com.android.server.wm.AppWindowToken.destroySurfaces:424 com.android.server.wm.AppWindowToken.destroySurfaces:388 com.android.server.wm.WindowStateAnimator.finishExit:686 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:570 com.android.server.wm.WindowAnimator.updateWindowsLocked:439 
+08-23 16:33:41.671  3100  5834 I SurfaceFlinger: id=32711 Removed jslamujeres (4/6)
+08-23 16:33:41.803 17806 17849 I WebViewFactory: Loading com.android.chrome version 59.0.3071.125 (code 307112552)
+08-23 16:33:41.804  3650  3650 D CustomFrequencyManagerService: FrequencyrequestList.getNextCStateDisableRequest, index: 0
+08-23 16:33:41.805  3650  3650 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 1800000  uid : 1000  pid : 3650  tag : AMS_RESUME_TAIL@CPU_MIN@25
+08-23 16:33:41.864 17806 17849 I cr_LibraryLoader: Time to load native libraries: 8 ms (timestamps 7424-7432)
+08-23 16:33:41.871 17806 17849 I chromium: [INFO:library_loader_hooks.cc(144)] Chromium logging enabled: level = 0, default verbosity = 0
+08-23 16:33:41.871 17806 17849 I cr_LibraryLoader: Expected native library version number "59.0.3071.125", actual native library version number "59.0.3071.125"
+08-23 16:33:41.917  3650  3901 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 2100000  uid : 1000  pid : 3650  tag : APP_LAUNCH@CPU_MIN@7254
+08-23 16:33:42.040 17806 17848 W ReactNativeJS: Warning: PropTypes has been moved to a separate package. Accessing React.PropTypes is no longer supported and will be removed completely in React 16. Use the prop-types package on npm instead. (https://fb.me/migrating-from-react-proptypes)
+08-23 16:33:42.238 17806 17848 I ReactNativeJS: Running application "IslaMujeres" with appParams: {"rootTag":1}. __DEV__ === true, development-level warning are ON, performance optimizations are OFF
+08-23 16:33:42.301 17806 17806 I MapboxEventManager: Telemetry initialize() called...
+08-23 16:33:42.302 17806 17806 I MapboxEventManager: Right before Telemetry set enabled in initialized()
+08-23 16:33:42.303 17806 17806 I MapboxEventManager: setTelemetryEnabled(); this.telemetryEnabled = false; telemetryEnabled = true
+08-23 16:33:42.303 17806 17806 D MapboxEventManager: Starting Telemetry Up!
+08-23 16:33:42.306  3650 27695 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:42.306  3650 27695 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:42.306  3650 27695 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:42.308 17806 17806 I MapboxEventManager: Permissions are good, see if GPS is enabled and if not then setup Ambient.
+08-23 16:33:42.311 17806 17806 E MapboxEventManager: Error Trying to load Staging Credentials: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.BaseBundle.getString(java.lang.String)' on a null object reference
+08-23 16:33:42.315 17806 17849 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+08-23 16:33:42.323 17806 17806 I art     : Thread[1,tid=17806,Native,Thread*=0xe4205400,peer=0x7645b730,"main"] recursive attempt to load library "/data/app/com.islamujeres-2/lib/arm/libmapbox-gl.so"
+08-23 16:33:42.324 17806 17806 I art     : Thread[1,tid=17806,Native,Thread*=0xe4205400,peer=0x7645b730,"main"] recursive attempt to load library "/data/app/com.islamujeres-2/lib/arm/libmapbox-gl.so"
+08-23 16:33:42.324 17806 17806 I art     : Thread[1,tid=17806,Native,Thread*=0xe4205400,peer=0x7645b730,"main"] recursive attempt to load library "/data/app/com.islamujeres-2/lib/arm/libmapbox-gl.so"
+08-23 16:33:42.325 17806 17806 E OfflineManager: Failed to read the storage key: Attempt to invoke virtual method 'boolean android.os.BaseBundle.getBoolean(java.lang.String, boolean)' on a null object reference
+08-23 16:33:42.333 17806 17806 I TelemetryService: onStartCommand() called
+08-23 16:33:42.340 17806 17806 V ConnectivityReceiver: Connected: true
+08-23 16:33:42.343 17806 17848 I ReactNativeJS: 'redux-persist/autoRehydrate: key `%s`, rehydrated to ', 'toggleFavorite', { favorites: 
+08-23 16:33:42.343 17806 17848 I ReactNativeJS:    [ 'ae377ed73ef6c342361576be41fbdd1c',
+08-23 16:33:42.343 17806 17848 I ReactNativeJS:      '885c30cb80ba7c9f6ab0fcec77327c35' ] }
+08-23 16:33:42.411 17806 17806 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: FATAL EXCEPTION: main
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: Process: com.islamujeres, PID: 17806
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'long com.mapbox.mapboxsdk.offline.OfflineRegionStatus.getCompletedResourceSize()' on a null object reference
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at com.mapbox.reactnativemapboxgl.ReactNativeMapboxGLModule.serializeOfflineRegionStatus(ReactNativeMapboxGLModule.java:334)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at com.mapbox.reactnativemapboxgl.ReactNativeMapboxGLModule._getOfflinePacks(ReactNativeMapboxGLModule.java:360)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at com.mapbox.reactnativemapboxgl.ReactNativeMapboxGLModule.flushListingRequests(ReactNativeMapboxGLModule.java:259)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at com.mapbox.reactnativemapboxgl.ReactNativeMapboxGLModule$OfflineRegionsInitialRequest$1.onStatus(ReactNativeMapboxGLModule.java:287)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at com.mapbox.mapboxsdk.offline.OfflineRegion$2$1.run(OfflineRegion.java:305)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:751)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6682)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1520)
+08-23 16:33:42.415 17806 17806 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1410)
+08-23 16:33:42.417  3650  3664 D Debug   : !@DumpState : SHIP
+08-23 16:33:42.417  3650  3664 D Debug   : !@DumpState : debug level:0x4f4c
+08-23 16:33:42.417  3650  3664 D Debug   : !@Dumpstate : Finally, system will skip dumpstate
+08-23 16:33:42.417  3650  3664 W ActivityManager:   Force finishing activity com.islamujeres/.MainActivity
+08-23 16:33:42.417  3650  3664 W MultiScreenManagerService: moveTaskBackToDisplayIfNeeded(): root is not base activity
+08-23 16:33:42.419  3650  3664 D ActivityManager: moveToFront() : reason=finishActivity adjustFocus setFocusedActivity isAttached=true TaskRecord{c7a70f8d0 #67 A=com.sec.android.app.launcher U=0 StackId=0 sz=1}
+08-23 16:33:42.420  3650  3664 W MultiScreenManagerService: moveTaskBackToDisplayIfNeeded(): root activity or app is null
+08-23 16:33:42.420  3650  3664 D ActivityManager: setFocusStackUnchecked: reason=finishActivity adjustFocus setFocusedActivity focusCandidate=ActivityStack{7bda571d0 stackId=0, 2 tasks} caller=com.android.server.am.ActivityStack.moveToFront:875 com.android.server.am.ActivityStackSupervisor.moveActivityStackToFront:2006 
+08-23 16:33:42.423  3650  3664 D InputDispatcher: Focused application set to: xxxx
+08-23 16:33:42.425  3650  3664 D InputDispatcher: Focus left window: 17806
+08-23 16:33:42.426  3650  3664 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+08-23 16:33:42.426  3650  3664 D GameManagerService: there is not sem_perfomance_mode on setting
+08-23 16:33:42.431  3650  3667 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 2100000  uid : 1000  pid : 3650  pkgName : AMS_APP_HOME@CPU_MIN@7
+08-23 16:33:42.431  3650  3667 D ActivityManagerPerformance: AMP_acquire() HOME
+08-23 16:33:42.437  3650  3667 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:42.437  3650  3667 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:42.437  3650  3667 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:42.445  3650  3901 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:42.445  3650  3901 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:42.445  3650  3901 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:42.450  3650  9027 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:42.450  3650  9027 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:42.450  3650  9027 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:42.456  3650  4311 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:42.456  3650  4311 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:42.456  3650  4311 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:42.462  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: ThreadedRenderer.create() translucent=true
+08-23 16:33:42.462  3650  3668 D WindowManager: addWindow: android.view.ViewRootImpl$W@f96d2c3 displayId=0
+08-23 16:33:42.462 17699 17699 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.startService:1386 android.content.ContextWrapper.startService:656 android.content.ContextWrapper.startService:656 com.samsung.android.sm.common.SmartManagerReceiver.b:363 com.samsung.android.sm.common.SmartManagerReceiver.onReceive:114 
+08-23 16:33:42.463  3650  3668 D InputTransport: Input channel constructed: fd=601
+08-23 16:33:42.463  3650  3668 D InputTransport: Input channel constructed: fd=602
+08-23 16:33:42.463  3650  3668 D WindowManager: openInputChannel mInputChannel: d415740 Application Error: com.islamujeres (server)
+08-23 16:33:42.463  3650  3668 V MARsPolicyManager: handelAlertToastWindowStarted pkgName = android
+08-23 16:33:42.464  3650  3668 D InputDispatcher: Focus entered window: 3650
+08-23 16:33:42.464  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: setView = DecorView@8a55fbe[islamujeres] touchMode=true
+08-23 16:33:42.466  3650  3982 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:42.466  3650  3982 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:42.466  3650  3982 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:42.467  4899 25988 D ForegroundUtils: could not check pending caller
+08-23 16:33:42.469  3650  6921 D GamePkgDataHelper: getGamePkgData(). com.sec.android.app.launcher
+08-23 16:33:42.469  3650  6921 D GameManagerService: identifyGamePackage. com.sec.android.app.launcher
+08-23 16:33:42.470  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: dispatchAttachedToWindow
+08-23 16:33:42.471  3650  3668 V WindowManager: Relayout Window{d415740d0 u0 Application Error: com.islamujeres}: viewVisibility=0 req=1353x589 WM.LayoutParams{(0,0)(wrapxwrap) gr=#11 sim=#120 ty=2003 fl=#1820002 pfl=0x110 fmt=-3 wanim=0x103038b vsysui=0x2000 surfaceInsets=Rect(8, 8 - 8, 8) needsMenuKey=2 naviIconColor=0}
+08-23 16:33:42.471  3650  6921 D TelephonyManager: getAllCellInfo : Caller (PID / UID / TID): 3650 / 1000 / 6921
+08-23 16:33:42.472  3100  3100 I SurfaceFlinger: id=32713 createSurf (17x17),1 flag=4, jslamujeres
+08-23 16:33:42.479  3650  6921 D GameManagerService: identifyGamePackage. com.sec.android.app.launcher
+08-23 16:33:42.479  3650  6921 D GameManagerService: identifyGamePackage. com.sec.android.app.launcher
+08-23 16:33:42.482 17699 17873 V CrashedAppLogging: isMasterSwitchOff : false
+08-23 16:33:42.485  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: Relayout returned: oldFrame=[0,0][0,0] newFrame=[43,1033][1396,1622] result=0x27 surface={isValid=true 516619106304} surfaceGenerationChanged=true
+08-23 16:33:42.485  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: mHardwareRenderer.initialize() mSurface={isValid=true 516619106304} hwInitialized=true
+08-23 16:33:42.485  3650  4030 I OpenGLRenderer: Initialized EGL, version 1.4
+08-23 16:33:42.485  3650  4030 D OpenGLRenderer: Swap behavior 1
+08-23 16:33:42.487  3650  3668 D WindowManager: set systemUiVisibility of statusbar : vis= 0x8
+08-23 16:33:42.488  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: MSG_WINDOW_FOCUS_CHANGED 1
+08-23 16:33:42.488  3650 27696 D WindowManager: adjustSystemUiVisibilityLw : vis= 0x8
+08-23 16:33:42.488  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: mHardwareRenderer.initializeIfNeeded()#2 mSurface={isValid=true 516619106304}
+08-23 16:33:42.488  3650  3668 D WindowManager: set systemUiVisibility of statusbar : vis= 0x2008
+08-23 16:33:42.489  3650 27692 D WindowManager: adjustSystemUiVisibilityLw : vis= 0x2008
+08-23 16:33:42.490  3650  4030 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1369x605]-format:1
+08-23 16:33:42.509  3650  3668 D WindowManager: finishDrawingWindow: Window{d415740d0 u0 Application Error: com.islamujeres} mDrawState=DRAW_PENDING
+08-23 16:33:42.509  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: MSG_RESIZED_REPORT: ci=Rect(0, 0 - 0, 0) vi=Rect(0, 0 - 0, 0) or=1
+08-23 16:33:42.513  3650  3668 D WindowManager: finishDrawingWindow: Window{d415740d0 u0 Application Error: com.islamujeres} mDrawState=HAS_DRAWN
+08-23 16:33:42.600  3650  3980 D MdnieScenarioControlService:  packageName : com.sec.android.app.launcher    className : com.sec.android.app.launcher.activities.LauncherActivity
+08-23 16:33:42.928  3650  3667 W ActivityManager: Activity pause timeout for ActivityRecord{fa18dbdd0 u0 com.islamujeres/.MainActivity t947 f}
+08-23 16:33:42.929  3650  3667 D ActivityManager: resumeTopActivityInnerLocked() : #0 prevTask=TaskRecord{dde48b9d0 #947 A=com.islamujeres U=0 StackId=1 sz=1} next=ActivityRecord{e11600cd0 u0 com.sec.android.app.launcher/.activities.LauncherActivity t67} mFocusedStack=ActivityStack{7bda571d0 stackId=0, 2 tasks}
+08-23 16:33:42.929  3650  3667 D CustomFrequencyManagerService: acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1300000  uid : 1000  pid : 3650  pkgName : AMS_ACT_RESUME@CPU_MIN@13
+08-23 16:33:42.929  3650  3667 D ActivityManagerPerformance: AMP_acquire() ACT_RESUME
+08-23 16:33:42.930  3650  3667 D ActivityManager: applyOptionsLocked(), pendingOptions : null
+08-23 16:33:42.931  3650  3667 V WindowManager: rotationForOrientationLw(orient=1, last=0); user=0 USER_ROTATION_LOCKED sensorRotation=-1 mLidState=-1 mDockMode=0 mHdmiPlugged=false
+08-23 16:33:42.932  3650  3650 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 2100000  uid : 1000  pid : 3650  tag : AMS_APP_HOME@CPU_MIN@7
+08-23 16:33:42.938  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: mHardwareRenderer.destroy()#1
+08-23 16:33:42.961  3650 27692 V WindowManager: Relayout Window{d4bbc8ed0 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=4 req=1440x2560 WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#81910d02 pfl=0x20000 fmt=-2 wanim=0x103038a vsysui=0x600 needsMenuKey=2 dimDuration=300 naviIconColor=0 sfl=0x40}
+08-23 16:33:42.962  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: Relayout returned: oldFrame=[0,0][1440,2560] newFrame=[0,0][1440,2560] result=0x1 surface={isValid=false 0} surfaceGenerationChanged=false
+08-23 16:33:42.974  4976  4976 D Launcher: onRestart, Launcher: 175582605
+08-23 16:33:42.974  3650  3667 D GameManagerService: there is not sem_perfomance_mode on setting
+08-23 16:33:42.974  3650  3650 D GameManagerService: NotifyRunnable. pkg: com.sec.android.app.launcher, type: 4, isMinimized: false, isTunableApp: false
+08-23 16:33:42.974  3650  3650 D GameManagerService: do nothing. mKillNotiCount: 3
+08-23 16:33:42.984  4976  4976 D Launcher: onStart, Launcher: 175582605
+08-23 16:33:42.984  4976  4976 D Launcher.HomeView: onStart
+08-23 16:33:42.984  4976  4976 D MenuAppsGridFragment: onStart:false
+08-23 16:33:42.984  4976  4976 I VerificationLog: onResume
+08-23 16:33:42.984  4976  4976 D Launcher: onResume, Launcher: 175582605
+08-23 16:33:42.985  3650  3901 D SecContentProvider: query(), uri = 17 selection = isSettingsChangesAllowed
+08-23 16:33:42.985  3650  3901 D SecContentProvider: called from com.sec.android.app.launcher
+08-23 16:33:42.986  3650  9030 D SecContentProvider: query(), uri = 17 selection = isSettingsChangesAllowed
+08-23 16:33:42.986  3650  9030 D SecContentProvider: called from com.sec.android.app.launcher
+08-23 16:33:42.987  4976  4976 D Launcher.HomeView: onResume
+08-23 16:33:42.992  4976  4976 D capture : ---------checkFileExist land
+08-23 16:33:42.992  4976  4976 D capture : currentOrientation: 1 mMainHomeScreenshot: false mMainHomeScreenshotLand: true
+08-23 16:33:42.994  4976  4976 D MenuAppsGridFragment: onResume:false
+08-23 16:33:42.994  4976  4976 D MenuAppsGridFragment: stateObj = com.android.launcher2.MenuAppsGrid$StateNormal@8151b9a
+08-23 16:33:42.995  4976  4976 D Launcher.MenuAppsGrid: BlurInfo : true , true
+08-23 16:33:42.995  4976  4976 D MenuAppsGridFragment: onResume  no mPendingModelUpdate:false this:MenuAppsGridFragment{281dccb #0 id=0x1020011 APPS}
+08-23 16:33:42.995  4976  4976 D Launcher.MenuAppsGrid: ChangeMobileKeyboard:false mCurrentOrientation:1 mRequestedOrientation:1 newConfig.orientation:1 isShown:true
+08-23 16:33:42.995  4976  4976 D Launcher.Workspace: changeOrientationIfRequired MobileKeyboardChanged : false   DisplayHeight : 2560  Density : 4.0   newConfig.orientation : 1
+08-23 16:33:42.995  4976  4976 D Launcher.Workspace: ChangeMobileKeyboard:false mCurrentOrientation:1 mRequestedOrientation:1 newConfig.orientation:1 isShown:falseQuickViewWorkspace isOpened: false
+08-23 16:33:42.996  3650 29598 D ActivityManager: post active user change for 0 fullscreen true isHomeActivity() true
+08-23 16:33:42.996  3650 29598 I WallpaperManagerService: switchPersonaWallpaper is called for personaId-0
+08-23 16:33:42.996  3650 29598 D KnoxTimeoutHandler: post home show event for user 0
+08-23 16:33:42.996  3650  3650 D WallpaperManagerService:  force update = false; persona id = 0; current user =0; current persona = 0
+08-23 16:33:42.996  3650  3650 D KnoxKeyguardDelegate: clear Flag
+08-23 16:33:42.996  3650 29598 D KnoxTimeoutHandler: postActiveUserChange [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 0
+08-23 16:33:42.996  3650  3650 D KnoxTimeoutHandler: handleHomeShow for 0 and current 0
+08-23 16:33:42.996  3650  3650 D KnoxTimeoutHandler: handleActiveUserChange [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 0
+08-23 16:33:42.997  3650  3650 I KnoxTimeoutHandler: Shared devices show user statefalse
+08-23 16:33:42.998  4976  4976 V LauncherAppWidgetHostView: calculateWidgetSize: (target widgetsize)  using w/h 1028 440 span 3 1 (widgetid 2) [current Gridsize : GRID_4x4]
+08-23 16:33:42.998  4976  4976 D LauncherAppWidgetHostView: calculateWidgetSize() widget = Google(widget id = 2) result hostview size = 1028 x 440
+08-23 16:33:42.998  4976  4976 D LauncherAppWidgetHostView: setResizeScaleResult() 1028/ 440 scaleToResize = 1.0(widget id = 2)
+08-23 16:33:42.998  4976  4976 V LauncherAppWidgetHostView: calculateWidgetSize: (target widgetsize)  using w/h 340 440 span 1 1 (widgetid 10) [current Gridsize : GRID_4x4]
+08-23 16:33:42.998  4976  4976 D LauncherAppWidgetHostView: calculateWidgetSize() widget = (1x1) HD Widgets(widget id = 10) result hostview size = 340 x 440
+08-23 16:33:42.998  4976  4976 D LauncherAppWidgetHostView: setResizeScaleResult() 340/ 440 scaleToResize = 1.0(widget id = 10)
+08-23 16:33:42.998  3650  4867 V WindowManager: Relayout Window{d4bbc8ed0 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity}: viewVisibility=0 req=1440x2560 WM.LayoutParams{(0,0)(fillxfill) sim=#30 ty=1 fl=#81910d02 pfl=0x20000 fmt=-2 wanim=0x103038a vsysui=0x600 needsMenuKey=2 dimDuration=0 naviIconColor=0 sfl=0x40}
+08-23 16:33:42.999  3100  3100 I SurfaceFlinger: id=32714 createSurf (1440x2560),1 flag=4, MauncherAct
+08-23 16:33:43.005  3100  3100 D Layer   : applyEffect ## com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity
+08-23 16:33:43.005  3100  3100 D Layer   : applyEffect ## animMode=3, target=2, pixType=1
+08-23 16:33:43.005  3100  3100 D Layer   : applyEffect ## pixAnim anim=13, timeMs=0, value=0.00, interp=0
+08-23 16:33:43.005  3100  3100 D Layer   : applyEffect ## pixAnim anim=13, timeMs=0, value=176.00, interp=3
+08-23 16:33:43.005  3100  3100 D Layer   : applyEffect ## pixAnim anim=14, timeMs=0, value=0.00, interp=0
+08-23 16:33:43.005  3100  3100 D Layer   : applyEffect ## pixAnim anim=14, timeMs=0, value=-10.00, interp=3
+08-23 16:33:43.007  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: Relayout returned: oldFrame=[0,0][1440,2560] newFrame=[0,0][1440,2560] result=0x7 surface={isValid=true 547414711296} surfaceGenerationChanged=true
+08-23 16:33:43.007  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: mHardwareRenderer.initialize() mSurface={isValid=true 547414711296} hwInitialized=true
+08-23 16:33:43.035  4976  5146 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000,  [1440x2560]-format:1
+08-23 16:33:43.070  3650  4955 D WindowManager: finishDrawingWindow: Window{d4bbc8ed0 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity} mDrawState=DRAW_PENDING
+08-23 16:33:43.071  4097  4097 D ImageWallpaper: onOffsetsChanged: xOffset=0.0, yOffset=0.0, xOffsetStep=0.0, yOffsetStep=0.0, xPixels=0, yPixels=0
+08-23 16:33:43.072  4097  4097 D ImageWallpaper: drawFrame=false rotation=0 mLastRotation=0
+08-23 16:33:43.072  4097  4097 D ImageWallpaper: drawFrame:[frame.width()]1646[frame.height()]2560
+08-23 16:33:43.072  4097  4097 D ImageWallpaper: surfaceDimensionsChanged=false mLastSurfaceRotation=0 mDisplayWidth=1440 mDisplayHeight=2560
+08-23 16:33:43.072  4097  4097 D ImageWallpaper: mNewKeyboard : 0 mLastKeyboard : 0 mForceDraw = false
+08-23 16:33:43.072  4097  4097 D ImageWallpaper: redrawNeeded = false, mOffsetsChanged = false
+08-23 16:33:43.072  4097  4097 D ImageWallpaper: Suppressed drawFrame since redraw is not needed and offsets have not changed.
+08-23 16:33:43.072  4097  4097 D WallpaperService: updateSurface forceRelayout=false redrawNeeded=false myWidth=1646 myHeight=2560 fixedSize=true mWidth=1646 mHeight=2560
+08-23 16:33:43.073  4097  4097 D ImageWallpaper: onVisibilityChanged: mVisible, visible=false, true
+08-23 16:33:43.073  4097  4097 D ImageWallpaper: Visibility changed to visible=true
+08-23 16:33:43.073  4097  4097 D ImageWallpaper: drawFrame=false rotation=0 mLastRotation=0
+08-23 16:33:43.073  4097  4097 D ImageWallpaper: drawFrame:[frame.width()]1646[frame.height()]2560
+08-23 16:33:43.073  4097  4097 D ImageWallpaper: surfaceDimensionsChanged=false mLastSurfaceRotation=0 mDisplayWidth=1440 mDisplayHeight=2560
+08-23 16:33:43.073  4097  4097 D ImageWallpaper: mNewKeyboard : 0 mLastKeyboard : 0 mForceDraw = false
+08-23 16:33:43.073  4097  4097 D ImageWallpaper: redrawNeeded = false, mOffsetsChanged = false
+08-23 16:33:43.073  4097  4097 D ImageWallpaper: Suppressed drawFrame since redraw is not needed and offsets have not changed.
+08-23 16:33:43.092  3650  3677 D KnoxTimeoutHandler: notifyActivityDrawn [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 0
+08-23 16:33:43.092  3650  3650 D KnoxTimeoutHandler: activityDrawn [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 0
+08-23 16:33:43.093  3650  3650 I KnoxTimeoutHandler: SD activityfalse
+08-23 16:33:43.093  3650  3650 I KnoxTimeoutHandler: Fullscreen and mCurrent is not KNOX user. Hence hide keyguard
+08-23 16:33:43.111  4097  4097 I ApplicationPackageManager: load=com.islamujeres, bg=192-192, dr=192-192, forDefault=false
+08-23 16:33:43.111  4097  4097 I ApplicationPackageManager: reset dr=192,192, bg=192,192
+08-23 16:33:43.112  4097  4097 I ApplicationPackageManager: scaled rate=1.1004878, size=192, alpha=14, hold=26, target=192
+08-23 16:33:43.269  4097  4114 I art     : Background partial concurrent mark sweep GC freed 49576(2MB) AllocSpace objects, 89(21MB) LOS objects, 19% free, 65MB/81MB, paused 632us total 145.912ms
+08-23 16:33:43.279  3650  3659 I art     : Background partial concurrent mark sweep GC freed 176704(11MB) AllocSpace objects, 39(804KB) LOS objects, 15% free, 90MB/106MB, paused 3.344ms total 328.001ms
+08-23 16:33:43.433  3650  4766 D CustomFrequencyManagerService: releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 1300000  uid : 1000  pid : 3650  tag : AMS_ACT_RESUME@CPU_MIN@13
+08-23 16:33:43.433  3650  4766 D ActivityManagerPerformance: AMP_release() ACT_RESUME
+08-23 16:33:43.490  3650  3677 D KnoxTimeoutHandler: notifyActivityDrawn [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 0
+08-23 16:33:43.491  3650  3650 D KnoxTimeoutHandler: activityDrawn [MsgParam] userId: 0 fullscreen is true showWhenlocked is false isMutiwindowRecord is false multiwindowstyle is 0
+08-23 16:33:43.491  4899  4915 D ForegroundUtils: could not check pending caller
+08-23 16:33:43.493  3650  3650 I KnoxTimeoutHandler: SD activityfalse
+08-23 16:33:43.493  3650  3650 I KnoxTimeoutHandler: Fullscreen and mCurrent is not KNOX user. Hence hide keyguard
+08-23 16:33:43.565  4976  5146 W OpenGLRenderer: Incorrectly called buildLayer on View: CellLayoutChildren, destroying layer...
+08-23 16:33:43.565  4976  5146 W OpenGLRenderer: Incorrectly called buildLayer on View: CellLayoutChildren, destroying layer...
+08-23 16:33:43.565  4976  5146 W OpenGLRenderer: Incorrectly called buildLayer on View: CellLayoutChildren, destroying layer...
+08-23 16:33:43.565  4976  5146 W OpenGLRenderer: Incorrectly called buildLayer on View: CellLayoutChildren, destroying layer...
+08-23 16:33:43.565  4976  5146 W OpenGLRenderer: Incorrectly called buildLayer on View: CellLayoutChildren, destroying layer...
+08-23 16:33:43.624  3650  3980 D MdnieScenarioControlService:  packageName : com.sec.android.app.launcher    className : com.sec.android.app.launcher.activities.LauncherActivity
+08-23 16:33:43.700  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:33:43.700  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -58
+08-23 16:33:43.800  3650  3867 D InputReader: Input event(4): value=1 when=899539368551000
+08-23 16:33:43.800  3650  3867 D InputReader: Input event(4): value=1 when=899539368551000
+08-23 16:33:43.800  3650  3867 I InputReader: Touch event's action is 0x0 (deviceType=0) [pCnt=1, s=0.55500 ] when=899539368551000
+08-23 16:33:43.800  3650  3866 I InputDispatcher: Delivering touch to (4097): action: 0x4, toolType: 1
+08-23 16:33:43.800  3650  3866 I InputDispatcher: Delivering touch to (3650): action: 0x0, toolType: 1
+08-23 16:33:43.800  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: ViewPostImeInputStage processPointer 0
+08-23 16:33:43.859  3650  3867 D InputReader: Input event(4): value=0 when=899539428197000
+08-23 16:33:43.859  3650  3867 D InputReader: Input event(4): value=0 when=899539428197000
+08-23 16:33:43.859  3650  3867 I InputReader: Touch event's action is 0x1 (deviceType=0) [pCnt=1, s=] when=899539428197000
+08-23 16:33:43.859  3650  3866 I InputDispatcher: Delivering touch to (3650): action: 0x1, toolType: 1
+08-23 16:33:43.860  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: ViewPostImeInputStage processPointer 1
+08-23 16:33:43.861  3650  3664 W ActivityManager:   Force finishing activity com.islamujeres/.MainActivity
+08-23 16:33:43.861  3650  3664 D WindowManager: disposeInputChannel mInputChannel: abcdadc com.islamujeres/com.islamujeres.MainActivity (server)
+08-23 16:33:43.863  3650  3664 I WindowManager_SurfaceController: Destroying surface Surface(name=com.islamujeres/com.islamujeres.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2905 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:1119 com.android.server.wm.WindowState.removeLocked:1849 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2928 com.android.server.wm.WindowManagerService.removeWindowLocked:2873 com.android.server.wm.WindowManagerService.removeWindowLocked:2683 com.android.server.wm.AppWindowToken.removeAllWindows:608 com.android.server.wm.AppWindowToken.removeAppFromTaskLocked:370 
+08-23 16:33:43.864  3100  3165 I SurfaceFlinger: id=32712 Removed NainActivit (4/7)
+08-23 16:33:43.864  3100  3165 I SurfaceFlinger: id=32712 Removed NainActivit (-2/7)
+08-23 16:33:43.868  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: mHardwareRenderer.destroy()#4
+08-23 16:33:43.868  3650  3668 D ViewRootImpl@f5cce72[islamujeres]: dispatchDetachedFromWindow
+08-23 16:33:43.883  3650  3664 D InputTransport: Input channel destroyed: fd=604
+08-23 16:33:43.885  3650  3668 D WindowManager: disposeInputChannel mInputChannel: d415740 Application Error: com.islamujeres (server)
+08-23 16:33:43.899  3650  3668 D InputDispatcher: Focus left window: 3650
+08-23 16:33:43.899  3650  3668 D InputDispatcher: Focus entered window: 4976
+08-23 16:33:43.899  3650  3668 D InputTransport: Input channel destroyed: fd=601
+08-23 16:33:43.900  3650  3668 D InputTransport: Input channel destroyed: fd=602
+08-23 16:33:43.900  3650  3664 I ActivityManager: Killing 17806:com.islamujeres/u0a375 (adj 900): crash
+08-23 16:33:43.900  3650  3668 D ViewRootImpl@3672112[ContainerKeyguardScrim]: mHardwareRenderer.destroy()#1
+08-23 16:33:43.901  3650  3664 D ActivityManager: cleanUpApplicationRecord -- 17806
+08-23 16:33:43.902  3650  3668 D WindowManager: set systemUiVisibility of statusbar : vis= 0x608
+08-23 16:33:43.902  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: MSG_WINDOW_FOCUS_CHANGED 1
+08-23 16:33:43.903  4976  4976 D ViewRootImpl@2930ca8[LauncherActivity]: mHardwareRenderer.initializeIfNeeded()#2 mSurface={isValid=true 547414711296}
+08-23 16:33:43.904  3650  3668 E ViewRootImpl: sendUserActionEvent() mView == null
+08-23 16:33:43.904  4899  7291 D ForegroundUtils: could not check pending caller
+08-23 16:33:43.904  3650 29598 D WindowManager: adjustSystemUiVisibilityLw : vis= 0x608
+08-23 16:33:43.904  4976  4976 D SEM_CLIP_SemClipboardManager: isCocktailBarDisplayed : false
+08-23 16:33:43.905  4976  4976 V InputMethodManager: Starting input: tba=android.view.inputmethod.EditorInfo@4d5d0 nm : com.sec.android.app.launcher ic=null
+08-23 16:33:43.905  4976  4976 I InputMethodManager: [IMM] startInputInner - mService.startInputOrWindowGainedFocus
+08-23 16:33:43.906  3650 27696 D InputMethodManagerService: windowGainedFocus mCurrentFocusedUserId - 0 and mSecureKeypadEnabled-false
+08-23 16:33:43.906  3650 27696 V InputMethodManagerService: windowGainedFocus: reason=WINDOW_FOCUS_GAIN client=android.os.BinderProxy@101cdb7 inputContext=null missingMethods= attribute=android.view.inputmethod.EditorInfo@85e81ed nm = com.sec.android.app.launcher controlFlags=#105 softInputMode=#30 windowFlags=#81910d02
+08-23 16:33:43.906  3650 27696 V InputMethodManagerService: Unspecified window will hide input
+08-23 16:33:43.906  3650 27696 D InputMethodManagerService: mDesktopModeManager null!
+08-23 16:33:43.906  3650 27696 V InputMethodManagerService: hideCurrentInputLocked - !shouldHideSoftInput
+08-23 16:33:43.907  3650 27696 D InputTransport: Input channel constructed: fd=399
+08-23 16:33:43.907  3650 27696 D InputTransport: Input channel destroyed: fd=399
+08-23 16:33:43.907  4976  4976 D InputTransport: Input channel constructed: fd=76
+08-23 16:33:43.974  3650  4687 D GraphicsStats: Buffer count: 11
+08-23 16:33:43.974  3650 15025 D InputTransport: Input channel destroyed: fd=607
+08-23 16:33:43.975  3650  3901 I Sensors : Acc old sensor_state 16385, new sensor_state : 16384 en : 0
+08-23 16:33:43.976  1825  1825 D InputTransport: Input channel destroyed: fd=70
+08-23 16:33:44.188  3650  3677 I WindowManager_SurfaceController: Destroying surface Surface(name=Application Error: com.islamujeres) called by com.android.server.wm.WindowStateAnimator.destroySurface:2905 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:1119 com.android.server.wm.WindowState.destroyOrSaveSurface:2627 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementInner:503 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop:278 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:226 com.android.server.wm.WindowManagerService$H.handleMessage:9317 android.os.Handler.dispatchMessage:102 
+08-23 16:33:44.188  3100  5834 I SurfaceFlinger: id=32713 Removed jslamujeres (5/6)
+08-23 16:33:44.189  3100  4479 I SurfaceFlinger: id=32713 Removed jslamujeres (-2/6)
+08-23 16:33:44.507  3650  6921 D TelephonyManager: getAllCellInfo : Caller (PID / UID / TID): 3650 / 1000 / 6921
+08-23 16:33:44.851 17567 17609 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:33:44.852 17567 17609 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:33:45.848  4668  4668 D io_stats: !@   8,0 r 71579028 2179735356 w 8060281 161225924 d 1074292 145531192 f 2409009 2408804 iot 23635700 16780356 th 61440 61440 61484 pt 400 inp 0 0 899541.415
+08-23 16:33:46.576  3650  3992 D WifiWatchdogStateMachine.SingDnsChecker: GW is reachable. - 316 msec.
+08-23 16:33:46.720  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:33:46.721  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:33:46.808  3650  3992 D WifiWatchdogStateMachine:  [|221] []
+08-23 16:33:48.702  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 7 99 -4 -200 -4 -200 -1 99 -102 -7 100 2 2147483647 0x2000 gsm|lte level=2
+08-23 16:33:48.704  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:33:48.706  4035  4035 D HeadsetPhoneState: Signal level : previous=3 curr=2
+08-23 16:33:48.707  4035  4035 D HeadsetPhoneState: sendDeviceStateChanged. mService=1 mSignal=2 mRoam=0 mBatteryCharge=2
+08-23 16:33:48.708  4035  4494 D HeadsetStateMachine: Disconnected process message: 11, size: 0
+08-23 16:33:48.709  4035  4494 E HeadsetStateMachine: Unknown message: 11
+08-23 16:33:48.719  4035  4035 D HeadsetPhoneState: Signal level : previous=2 curr=2
+08-23 16:33:48.726  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 5 99 -5 -200 -5 -200 -1 9 -102 -7 100 2 2147483647 0x2000 gsm|lte level=2
+08-23 16:33:48.726  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:33:49.468  3650  3825 D SamsungAlarmManager: Expired : 8
+08-23 16:33:49.472  3650  3825 I SamsungAlarmManager: setLocked to kernel - T:3 / 20170823T163359, SetElapsed=2680758716, nowELAPSED=2680748187
+08-23 16:33:49.473  3650  3825 V SamsungAlarmManager: Sending to uid : 10063 action=send_events alarm=Alarm{621b822 type 3 when 2680748183 com.google.android.googlequicksearchbox}
+08-23 16:33:49.490  3650  3825 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:33:49.491  3650  3825 D CompatibilityInfo: applicationDensity - 640
+08-23 16:33:49.491  3650  3825 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:33:49.521 31835 17877 I EventLogSendingHelper: Sending log events.
+08-23 16:33:49.746  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:33:49.746  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:33:50.854  4668  4668 D io_stats: !@   8,0 r 71579273 2179740544 w 8060304 161226040 d 1074292 145531192 f 2409009 2408804 iot 23635730 16780398 th 61440 61440 61484 pt 400 inp 0 0 899546.421
+08-23 16:33:50.913  3650  4865 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+08-23 16:33:50.915  3650  4865 D BatteryService: level:48, scale:100, status:2, health:2, present:true, voltage: 3929, temperature: 350, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303690, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+08-23 16:33:50.915  3650  4865 D BatteryService: online:6, current avg:382, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_now:578
+08-23 16:33:50.915  3650  3650 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+08-23 16:33:50.933  3650  3650 V UiModeManager: updateLocked: null action, mDockState=0, category=null
+08-23 16:33:50.934  3650  3650 D UiModeManager: updateConfigurationLocked: mDockState=0; mCarMode=false; mNightMode=1; uiMode=17
+08-23 16:33:50.940  3650  3650 D GameManagerService: new battery level: 48
+08-23 16:33:50.948  4097  4097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+08-23 16:33:50.949  4097  4097 D KeyguardUpdateMonitor: handleBatteryUpdate
+08-23 16:33:50.956  4097  4097 D PowerUI : priorPlugType = 2 mPlugType =  2
+08-23 16:33:50.959  4097  4097 D PowerUI.Notification: showChargingNotice oldChargingType : 1 currentChargingType : 1 oldChargingTime : 5946000 mChargingTime : 5935000
+08-23 16:33:50.960  4097  4097 D PowerUI.Notification: showChargingNotification()
+08-23 16:33:50.965  4035  4035 V HeadsetService: HeadsetService - Received Intent.ACTION_BATTERY_CHANGED
+08-23 16:33:50.966  4035  4494 D HeadsetStateMachine: Disconnected process message: 10, size: 0
+08-23 16:33:50.980  3650  6038 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+08-23 16:33:50.984  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:33:50.985  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:33:50.987  4097  4097 D Tile.FlashlightTile: ACTION_BATTERY_CHANGED - Level :: 48, emEnabled :: false
+08-23 16:33:51.594  3650  6921 D SSRM:t  : SIOP:: AP = 410, PST = 446 (W:10), CP = 328, CUR = 391, LCD = 82
+08-23 16:33:52.772  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:33:52.773  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:33:54.910 17567 17609 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:33:54.912 17567 17609 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:33:55.787  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:33:55.787  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -58
+08-23 16:33:55.812  3021  3021 E audit   : type=1400 audit(1503524035.801:57699): avc:  denied  { read } for  pid=28476 comm="BgHandler" name="28427-0" dev="debugfs" ino=16627764 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:sec_debugfs:s0 tclass=file permissive=0 SEPF_SECMOBILE_7.0_0005
+08-23 16:33:55.859  4668  4668 D io_stats: !@   8,0 r 71579282 2179741168 w 8060325 161226288 d 1074297 145531216 f 2409022 2408817 iot 23635760 16780414 th 61440 61440 61484 pt 400 inp 0 0 899551.426
+08-23 16:33:56.380  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 5 99 -8 -200 -8 -200 -1 99 -101 -6 160 2 2147483647 0x3000 gsm|lte level=3
+08-23 16:33:56.380  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:33:56.383  4035  4035 D HeadsetPhoneState: Signal level : previous=2 curr=3
+08-23 16:33:56.384  4035  4035 D HeadsetPhoneState: sendDeviceStateChanged. mService=1 mSignal=3 mRoam=0 mBatteryCharge=2
+08-23 16:33:56.385  4035  4494 D HeadsetStateMachine: Disconnected process message: 11, size: 0
+08-23 16:33:56.385  4035  4494 E HeadsetStateMachine: Unknown message: 11
+08-23 16:33:56.395  4035  4035 D HeadsetPhoneState: Signal level : previous=3 curr=3
+08-23 16:33:56.400  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 6 99 -6 -200 -6 -200 -1 10 -101 -6 160 2 2147483647 0x3000 gsm|lte level=3
+08-23 16:33:56.400  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:33:58.812  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:33:58.812  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:34:00.000  3650  3825 D SamsungAlarmManager: Expired : 8
+08-23 16:34:00.004  3650  3825 V SamsungAlarmManager: Sending to uid : 1000 action=android.intent.action.TIME_TICK alarm=Alarm{9f91070 type 3 when 2680758716 android}
+08-23 16:34:00.036  3650  3650 D SamsungAlarmManager: setExact Intent (T:3/F:1/AC:false) 20170823T163500 - CU:1000/CP:3650
+08-23 16:34:00.039  4097  4097 D KeyguardUpdateMonitor: received broadcast android.intent.action.TIME_TICK
+08-23 16:34:00.039  4097  4097 D KeyguardUpdateMonitor: handleTimeUpdate#start
+08-23 16:34:00.040  4097  4097 I KeyguardClockPage: refreshTime(): ImageSingle2016 hometime:Pacific/Auckland locale:en_GB hasBG?false, Roaming:false
+08-23 16:34:00.053  4097  4097 D KeyguardSingleImageClockView: refreshTime() min:34, hour:4, hour_day:16
+08-23 16:34:00.074  4097  4097 D KeyguardUpdateMonitor: handleTimeUpdate#end
+08-23 16:34:00.074  4097  4097 D SystemUI_Clock: Clock received ACTION_TIME_TICK : start
+08-23 16:34:00.079  4097  4097 D SystemUI_Clock: Clock received ACTION_TIME_TICK : end
+08-23 16:34:00.089  4097  4097 D TextClock: TextClock received ACTION_TIME_TICK : start
+08-23 16:34:00.091  4097  4097 D TextClock: TextClock received ACTION_TIME_TICK : end
+08-23 16:34:00.094  4097  4097 D TextClock: TextClock received ACTION_TIME_TICK : start
+08-23 16:34:00.096  4097  4097 D TextClock: TextClock received ACTION_TIME_TICK : end
+08-23 16:34:00.104  4097  4097 D TextClock: TextClock received ACTION_TIME_TICK : start
+08-23 16:34:00.106  4097  4097 D TextClock: TextClock received ACTION_TIME_TICK : end
+08-23 16:34:00.108  4097  4097 V hong    : mid yDiff = 584
+08-23 16:34:00.109  4097  4097 V hong    : mid yDiff = 584
+08-23 16:34:00.110  4097  4097 D SystemUI_DateView: DateView received ACTION_TIME_TICK : start
+08-23 16:34:00.116  4097  4097 D SystemUI_DateView: DateView received ACTION_TIME_TICK : end
+08-23 16:34:00.118  4097  4097 D TextClock: TextClock received ACTION_TIME_TICK : start
+08-23 16:34:00.119  4097  4097 D TextClock: TextClock received ACTION_TIME_TICK : end
+08-23 16:34:00.124  4097  4097 D DateTimeView: DateTimeView received ACTION_TIME_TICK : start
+08-23 16:34:00.129  4097  4097 D DateTimeView: DateTimeView received ACTION_TIME_TICK : end
+08-23 16:34:00.140  3650  3667 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:00.140  3650  3667 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:00.140  3650  3667 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:00.186  3650 15024 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:00.186  3650 15024 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:00.186  3650 15024 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:00.226  3650  9027 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:00.226  3650  9027 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:00.226  3650  9027 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:00.238  3650  3925 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:00.238  3650  3925 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:00.238  3650  3925 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:00.239  4976  4976 V LauncherAppWidgetHostView: calculateWidgetSize: (target widgetsize)  using w/h 1028 440 span 3 1 (widgetid 2) [current Gridsize : GRID_4x4]
+08-23 16:34:00.239  4976  4976 D LauncherAppWidgetHostView: calculateWidgetSize() widget = Google(widget id = 2) result hostview size = 1028 x 440
+08-23 16:34:00.239  4976  4976 D LauncherAppWidgetHostView: setResizeScaleResult() 1028/ 440 scaleToResize = 1.0(widget id = 2)
+08-23 16:34:00.239  4976  4976 V LauncherAppWidgetHostView: calculateWidgetSize: (target widgetsize)  using w/h 340 440 span 1 1 (widgetid 10) [current Gridsize : GRID_4x4]
+08-23 16:34:00.239  4976  4976 D LauncherAppWidgetHostView: calculateWidgetSize() widget = (1x1) HD Widgets(widget id = 10) result hostview size = 340 x 440
+08-23 16:34:00.239  4976  4976 D LauncherAppWidgetHostView: setResizeScaleResult() 340/ 440 scaleToResize = 1.0(widget id = 10)
+08-23 16:34:00.250  3650  3664 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:00.250  3650  3664 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:00.250  3650  3664 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:00.263  3650  6201 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:00.263  3650  6201 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:00.263  3650  6201 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:00.277  3650 27696 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:00.277  3650 27696 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:00.277  3650 27696 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:00.287  3650 15025 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:00.287  3650 15025 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:00.287  3650 15025 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:00.297  3650  6039 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:00.297  3650  6039 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:00.297  3650  6039 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:00.309  3650  4687 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:00.309  3650  4687 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:00.309  3650  4687 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:00.865  4668  4668 D io_stats: !@   8,0 r 71579381 2179745500 w 8060346 161226400 d 1074297 145531216 f 2409023 2408818 iot 23635830 16780444 th 61440 61440 61484 pt 400 inp 0 0 899556.432
+08-23 16:34:00.960  3650 27700 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+08-23 16:34:00.962  3650 27700 D BatteryService: level:48, scale:100, status:2, health:2, present:true, voltage: 3935, temperature: 349, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303690, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+08-23 16:34:00.963  3650 27700 D BatteryService: online:6, current avg:487, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_now:589
+08-23 16:34:00.963  3650  3650 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+08-23 16:34:00.978  3650  3650 V UiModeManager: updateLocked: null action, mDockState=0, category=null
+08-23 16:34:00.978  3650  3650 D UiModeManager: updateConfigurationLocked: mDockState=0; mCarMode=false; mNightMode=1; uiMode=17
+08-23 16:34:00.980  3650  3650 D GameManagerService: new battery level: 48
+08-23 16:34:00.985  4097  4097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+08-23 16:34:00.985  4097  4097 D KeyguardUpdateMonitor: handleBatteryUpdate
+08-23 16:34:00.989  4097  4097 D PowerUI : priorPlugType = 2 mPlugType =  2
+08-23 16:34:00.991  4097  4097 D PowerUI.Notification: showChargingNotice oldChargingType : 1 currentChargingType : 1 oldChargingTime : 5935000 mChargingTime : 5924000
+08-23 16:34:00.991  4097  4097 D PowerUI.Notification: showChargingNotification()
+08-23 16:34:00.998  4035  4035 V HeadsetService: HeadsetService - Received Intent.ACTION_BATTERY_CHANGED
+08-23 16:34:00.998  4035  4494 D HeadsetStateMachine: Disconnected process message: 10, size: 0
+08-23 16:34:01.012  3650 27694 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+08-23 16:34:01.016  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:34:01.017  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:34:01.019  4097  4097 D Tile.FlashlightTile: ACTION_BATTERY_CHANGED - Level :: 48, emEnabled :: false
+08-23 16:34:01.637  3650  6921 D SSRM:t  : SIOP:: AP = 390, PST = 438 (W:10), CP = 326, CUR = 490, LCD = 82
+08-23 16:34:01.837  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:01.837  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -58
+08-23 16:34:03.121  3145  3642 D EnterpriseController: netId is 0
+08-23 16:34:03.121  3145  3642 D Netd    : getNetworkForDns: using netid 792 for uid 10109
+08-23 16:34:03.121  3145  3642 D DnsProxyListener: DNSDBG::dns addrinfo af 2
+08-23 16:34:04.860  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:04.861  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:34:04.976 17567 17609 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:34:04.978 17567 17609 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:34:05.871  4668  4668 D io_stats: !@   8,0 r 71579388 2179745964 w 8060354 161226444 d 1074297 145531216 f 2409027 2408822 iot 23635850 16780450 th 61440 61440 61484 pt 400 inp 0 0 899561.438
+08-23 16:34:06.617  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 6 99 -4 -200 -4 -200 -1 99 -101 -6 130 2 2147483647 0x2000 gsm|lte level=2
+08-23 16:34:06.618  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:34:06.618  4035  4035 D HeadsetPhoneState: Signal level : previous=3 curr=2
+08-23 16:34:06.618  4035  4035 D HeadsetPhoneState: sendDeviceStateChanged. mService=1 mSignal=2 mRoam=0 mBatteryCharge=2
+08-23 16:34:06.618  4035  4494 D HeadsetStateMachine: Disconnected process message: 11, size: 0
+08-23 16:34:06.618  4035  4494 E HeadsetStateMachine: Unknown message: 11
+08-23 16:34:06.623  4035  4035 D HeadsetPhoneState: Signal level : previous=2 curr=2
+08-23 16:34:06.624  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 6 99 -6 -200 -6 -200 -1 10 -101 -6 130 2 2147483647 0x2000 gsm|lte level=2
+08-23 16:34:06.624  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:34:06.873  3145  3638 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'LABEL' not found
+08-23 16:34:06.873  3145  3638 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'UID' not found
+08-23 16:34:07.887  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:07.887  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:34:09.095  3650  4234 E Watchdog: !@Sync 29978 [23_Aug_16_34_09.094]
+08-23 16:34:10.878  4668  4668 D io_stats: !@   8,0 r 71579467 2179746400 w 8060357 161226584 d 1074297 145531216 f 2409029 2408824 iot 23635870 16780464 th 61440 61440 61484 pt 400 inp 0 0 899566.444
+08-23 16:34:10.907  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:10.908  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -58
+08-23 16:34:11.005  3650  9027 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+08-23 16:34:11.005  3650  9027 D BatteryService: level:48, scale:100, status:2, health:2, present:true, voltage: 3934, temperature: 348, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303690, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+08-23 16:34:11.005  3650  9027 D BatteryService: online:6, current avg:540, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_now:570
+08-23 16:34:11.006  3650  3650 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+08-23 16:34:11.012  3650  3650 V UiModeManager: updateLocked: null action, mDockState=0, category=null
+08-23 16:34:11.013  3650  3650 D UiModeManager: updateConfigurationLocked: mDockState=0; mCarMode=false; mNightMode=1; uiMode=17
+08-23 16:34:11.015  3650  3650 D GameManagerService: new battery level: 48
+08-23 16:34:11.019  4097  4097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+08-23 16:34:11.019  4097  4097 D KeyguardUpdateMonitor: handleBatteryUpdate
+08-23 16:34:11.022  4097  4097 D PowerUI : priorPlugType = 2 mPlugType =  2
+08-23 16:34:11.025  4097  4097 D PowerUI.Notification: showChargingNotice oldChargingType : 1 currentChargingType : 1 oldChargingTime : 5924000 mChargingTime : 5924000
+08-23 16:34:11.025  4097  4097 D PowerUI.Notification: There is no change about charging status, so return!
+08-23 16:34:11.027  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:34:11.028  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:34:11.033  4035  4035 V HeadsetService: HeadsetService - Received Intent.ACTION_BATTERY_CHANGED
+08-23 16:34:11.033  4035  4494 D HeadsetStateMachine: Disconnected process message: 10, size: 0
+08-23 16:34:11.045  4097  4097 D Tile.FlashlightTile: ACTION_BATTERY_CHANGED - Level :: 48, emEnabled :: false
+08-23 16:34:11.193  3650  9028 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:11.193  3650  9028 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:11.193  3650  9028 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:11.249  3650 27694 D CompatibilityInfo: mCompatibilityFlags - 0
+08-23 16:34:11.249  3650 27694 D CompatibilityInfo: applicationDensity - 640
+08-23 16:34:11.249  3650 27694 D CompatibilityInfo: applicationScale - 1.0
+08-23 16:34:11.276  6159  6432 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:34:11.277  6159  6432 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:34:11.280  3145  3642 D EnterpriseController: netId is 0
+08-23 16:34:11.280  3145  3642 D Netd    : getNetworkForDns: using netid 792 for uid 10358
+08-23 16:34:11.280  3145  3642 D DnsProxyListener: DNSDBG::dns addrinfo af 2
+08-23 16:34:11.282  3145  3638 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'LABEL' not found
+08-23 16:34:11.282  3145  3638 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'UID' not found
+08-23 16:34:11.692  3650  6921 D SSRM:t  : SIOP:: AP = 380, PST = 432 (W:10), CP = 324, CUR = 538, LCD = 82
+08-23 16:34:13.937  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:13.953 12960 13014 E GeoNet - UALib: Channel registration failed, will retry.
+08-23 16:34:13.985  3650  4311 D SamsungAlarmManager: setInexact Intent (T:3/F:0/AC:false) 20170823T163453 - CU:10343/CP:12960
+08-23 16:34:13.986  3650  4311 I SamsungAlarmManager: setLocked to kernel - T:2 / 20170823T163453, SetElapsed=2680812678, nowELAPSED=2680772702
+08-23 16:34:14.028 12960 13014 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:34:14.029 12960 13014 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:34:14.036  3145  3642 D EnterpriseController: netId is 0
+08-23 16:34:14.036  3145  3642 D Netd    : getNetworkForDns: using netid 792 for uid 10343
+08-23 16:34:14.036  3145  3642 D DnsProxyListener: DNSDBG::dns addrinfo af 2
+08-23 16:34:15.041 17567 17609 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:34:15.043 17567 17609 I System.out: (HTTPLog)-Static: isSBSettingEnabled false
+08-23 16:34:15.883  4668  4668 D io_stats: !@   8,0 r 71579633 2179751588 w 8060380 161226772 d 1074298 145531304 f 2409037 2408832 iot 23635990 16780509 th 61440 61440 61484 pt 400 inp 0 0 899571.450
+08-23 16:34:16.951  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:16.951  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:34:19.969  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:19.969  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:34:20.889  4668  4668 D io_stats: !@   8,0 r 71579633 2179751588 w 8060392 161226884 d 1074298 145531304 f 2409045 2408840 iot 23636010 16780517 th 61440 61440 61484 pt 400 inp 0 0 899576.456
+08-23 16:34:21.068  3650 29598 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+08-23 16:34:21.069  3650 29598 D BatteryService: level:48, scale:100, status:2, health:2, present:true, voltage: 3939, temperature: 347, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303690, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+08-23 16:34:21.070  3650 29598 D BatteryService: online:6, current avg:558, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_now:596
+08-23 16:34:21.070  3650  3650 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+08-23 16:34:21.088  3650  3650 V UiModeManager: updateLocked: null action, mDockState=0, category=null
+08-23 16:34:21.088  3650  3650 D UiModeManager: updateConfigurationLocked: mDockState=0; mCarMode=false; mNightMode=1; uiMode=17
+08-23 16:34:21.094  3650  3650 D GameManagerService: new battery level: 48
+08-23 16:34:21.099  4097  4097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+08-23 16:34:21.100  4097  4097 D KeyguardUpdateMonitor: handleBatteryUpdate
+08-23 16:34:21.106  4097  4097 D PowerUI : priorPlugType = 2 mPlugType =  2
+08-23 16:34:21.110  4097  4097 D PowerUI.Notification: showChargingNotice oldChargingType : 1 currentChargingType : 1 oldChargingTime : 5924000 mChargingTime : 5914000
+08-23 16:34:21.110  4097  4097 D PowerUI.Notification: showChargingNotification()
+08-23 16:34:21.116  4035  4035 V HeadsetService: HeadsetService - Received Intent.ACTION_BATTERY_CHANGED
+08-23 16:34:21.117  4035  4494 D HeadsetStateMachine: Disconnected process message: 10, size: 0
+08-23 16:34:21.135  3650  6039 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+08-23 16:34:21.138  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:34:21.139  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:34:21.140  4097  4097 D Tile.FlashlightTile: ACTION_BATTERY_CHANGED - Level :: 48, emEnabled :: false
+08-23 16:34:21.725  3650  6921 D SSRM:t  : SIOP:: AP = 380, PST = 425 (W:10), CP = 322, CUR = 556, LCD = 82
+08-23 16:34:22.990  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:24.498 27051 27068 D ContactsProvider_EventLog: contents_sample_state: [ contacts(68) data(605) accounts({com.whatsapp (23)=14, com.google (2)=68}) accounts deleted({}) calls([logtype:100 cnt:392, logtype:300 cnt:25, logtype:500 cnt:2]) countryIso(MX) userId(0)  ]
+08-23 16:34:24.498 27051 27068 D ContactsProvider_EventLog: contents_sample_state: [ agr({[2]=54, [2 ,23]=14})  ]
+08-23 16:34:24.498 27051 27068 D ContactsProvider_EventLog: contents_sample_state: [ actCnt({android.process.acore=1})  ]
+08-23 16:34:24.504 27051 27068 E ContactsProvider_EventLog: Flush buffer to file cnt : 1 size : 0Kb duration : 5ms lastUpdatedAfter : 60102 ms mFlush_time_threasold : 2000 mCurrentSize : 378
+08-23 16:34:25.164 17567 17609 E Fabric  : Settings request failed.
+08-23 16:34:25.164 17567 17609 E Fabric  : io.fabric.sdk.android.services.network.HttpRequest$HttpRequestException: java.net.SocketTimeoutException: connect timed out
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.services.network.HttpRequest.code(HttpRequest.java:1355)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.services.settings.DefaultSettingsSpiCall.handleResponse(DefaultSettingsSpiCall.java:106)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.services.settings.DefaultSettingsSpiCall.invoke(DefaultSettingsSpiCall.java:90)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.services.settings.DefaultSettingsController.loadSettingsData(DefaultSettingsController.java:80)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.services.settings.DefaultSettingsController.loadSettingsData(DefaultSettingsController.java:64)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.services.settings.Settings.loadSettingsData(Settings.java:155)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.Onboarding.retrieveSettingsData(Onboarding.java:126)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.Onboarding.doInBackground(Onboarding.java:99)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.Onboarding.doInBackground(Onboarding.java:45)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.InitializationTask.doInBackground(InitializationTask.java:63)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.InitializationTask.doInBackground(InitializationTask.java:28)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.services.concurrency.AsyncTask$2.call(AsyncTask.java:311)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.lang.Thread.run(Thread.java:762)
+08-23 16:34:25.164 17567 17609 E Fabric  : Caused by: java.net.SocketTimeoutException: connect timed out
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:334)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:196)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:356)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at java.net.Socket.connect(Socket.java:586)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.internal.Platform.connectSocket(Platform.java:113)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.Connection.connectSocket(Connection.java:1455)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.Connection.connect(Connection.java:1413)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:1707)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:133)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:466)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:371)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:503)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:438)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:567)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getResponseCode(DelegatingHttpsURLConnection.java:105)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	at io.fabric.sdk.android.services.network.HttpRequest.code(HttpRequest.java:1353)
+08-23 16:34:25.164 17567 17609 E Fabric  : 	... 17 more
+08-23 16:34:25.892  4668  4668 D io_stats: !@   8,0 r 71579914 2179762284 w 8060445 161227396 d 1074299 145531308 f 2409071 2408866 iot 23636200 16780620 th 61440 61440 61484 pt 400 inp 0 0 899581.460
+08-23 16:34:26.001  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:26.001  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:34:29.026  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:29.026  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:34:30.728  3111  3151 D Sensorhubs: readLargeContextData: 1, 1, 26, 4, 4, -114, -41, 99, 1, 1, 1, 18, 79, -118
+08-23 16:34:30.746  3650  3833 D SensorHubManager: onGetSensorHubDataLocked: library(14) = 1, 1, 26, 4, 4, -114, -41, 99, 1, 1, 1, 18, 79, -118
+08-23 16:34:30.792  3650  3832 D CAE     : onGetSensorHubData(SensorHubParserProvider.java:94) - onGetSensorHubData Event [event buffer len :14], AP_WAKEUP
+08-23 16:34:30.794  3650  3832 I CAE     : parse(SensorHubParserProvider.java:196) - buffer size = 14
+08-23 16:34:30.800  3650  3832 I CAE     : parse(SensorHubParserProvider.java:207) - 1, 1, 26, 4, 4, -114, -41, 99, 1, 1, 1, 18, 79, -118,
+08-23 16:34:30.809  3650  3832 W CAE     : parse(ActivityTrackerBatchRunner.java:236) - parse start
+08-23 16:34:30.817  3650  3832 I CAE     : getMostActivity(ActivityTrackerBatchRunner.java:321) - size:0
+08-23 16:34:30.823  3650  3832 D CAE     : display(ContextProvider.java:375) - ================= ACTIVITY_TRACKER_BATCH =================
+08-23 16:34:30.826  3650  3832 I CAE     : display(ContextProvider.java:391) - Accuracy=[1], Duration=[1200010], Count=[1], OperationMode=[2], ActivityType=[1], MostActivity=[1], TimeStamp=[1503522870115]
+08-23 16:34:30.830  3650  3832 W CAE     : parse(ActivityTrackerBatchRunner.java:307) - parse end
+08-23 16:34:30.865  3650  3835 D SemContextService: updateContext() : event = Activity Batch
+08-23 16:34:30.871  3650  3650 D SemContextManager: onSemContextChanged() : event = Activity Batch
+08-23 16:34:30.872  3650  3650 D SLocation: TYPE_ACTIVITY_BATCH [2]
+08-23 16:34:30.880  3650  4251 D SLocation: last acc 27666.086
+08-23 16:34:30.897  4668  4668 D io_stats: !@   8,0 r 71579997 2179766228 w 8060452 161227512 d 1074315 145531384 f 2409072 2408867 iot 23636270 16780659 th 61440 61440 61484 pt 400 inp 0 0 899586.464
+08-23 16:34:31.123  3650 27691 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+08-23 16:34:31.125  3650 27691 D BatteryService: level:48, scale:100, status:2, health:2, present:true, voltage: 3925, temperature: 347, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303690, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+08-23 16:34:31.125  3650 27691 D BatteryService: online:6, current avg:560, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_now:592
+08-23 16:34:31.126  3650  3650 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+08-23 16:34:31.141  3650  3650 V UiModeManager: updateLocked: null action, mDockState=0, category=null
+08-23 16:34:31.141  3650  3650 D UiModeManager: updateConfigurationLocked: mDockState=0; mCarMode=false; mNightMode=1; uiMode=17
+08-23 16:34:31.147  3650  3650 D GameManagerService: new battery level: 48
+08-23 16:34:31.157  4097  4097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+08-23 16:34:31.158  4097  4097 D KeyguardUpdateMonitor: handleBatteryUpdate
+08-23 16:34:31.165  4097  4097 D PowerUI : priorPlugType = 2 mPlugType =  2
+08-23 16:34:31.170  4097  4097 D PowerUI.Notification: showChargingNotice oldChargingType : 1 currentChargingType : 1 oldChargingTime : 5914000 mChargingTime : 5899000
+08-23 16:34:31.170  4097  4097 D PowerUI.Notification: showChargingNotification()
+08-23 16:34:31.180  4035  4035 V HeadsetService: HeadsetService - Received Intent.ACTION_BATTERY_CHANGED
+08-23 16:34:31.181  4035  4494 D HeadsetStateMachine: Disconnected process message: 10, size: 0
+08-23 16:34:31.202  3650 15027 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+08-23 16:34:31.206  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:34:31.207  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:34:31.210  4097  4097 D Tile.FlashlightTile: ACTION_BATTERY_CHANGED - Level :: 48, emEnabled :: false
+08-23 16:34:31.766  3650  6921 D SSRM:t  : SIOP:: AP = 370, PST = 418 (W:10), CP = 320, CUR = 559, LCD = 82
+08-23 16:34:32.052  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:33.499  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 6 99 -8 -200 -8 -200 -1 99 -100 -6 60 2 2147483647 0x3000 gsm|lte level=3
+08-23 16:34:33.500  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:34:33.502  4035  4035 D HeadsetPhoneState: Signal level : previous=2 curr=3
+08-23 16:34:33.502  4035  4035 D HeadsetPhoneState: sendDeviceStateChanged. mService=1 mSignal=3 mRoam=0 mBatteryCharge=2
+08-23 16:34:33.503  4035  4494 D HeadsetStateMachine: Disconnected process message: 11, size: 0
+08-23 16:34:33.503  4035  4494 E HeadsetStateMachine: Unknown message: 11
+08-23 16:34:33.514  4035  4035 D HeadsetPhoneState: Signal level : previous=3 curr=3
+08-23 16:34:33.516  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 6 99 -6 -200 -6 -200 -1 11 -100 -6 60 2 2147483647 0x3000 gsm|lte level=3
+08-23 16:34:33.516  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:34:35.073  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:35.903  4668  4668 D io_stats: !@   8,0 r 71580002 2179766332 w 8060479 161227640 d 1074315 145531384 f 2409076 2408871 iot 23636290 16780664 th 61440 61440 61484 pt 400 inp 0 0 899591.470
+08-23 16:34:38.097  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:39.098  3650  4234 E Watchdog: !@Sync 29979 [23_Aug_16_34_39.097]
+08-23 16:34:40.909  4668  4668 D io_stats: !@   8,0 r 71580002 2179766332 w 8060480 161227656 d 1074315 145531384 f 2409077 2408872 iot 23636290 16780665 th 61440 61440 61484 pt 400 inp 0 0 899596.476
+08-23 16:34:41.119  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:41.178  3650  6039 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+08-23 16:34:41.179  3650  6039 D BatteryService: level:48, scale:100, status:2, health:2, present:true, voltage: 3942, temperature: 346, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303690, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+08-23 16:34:41.179  3650  6039 D BatteryService: online:6, current avg:569, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_now:595
+08-23 16:34:41.179  3650  3650 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+08-23 16:34:41.189  3650  3650 V UiModeManager: updateLocked: null action, mDockState=0, category=null
+08-23 16:34:41.190  3650  3650 D UiModeManager: updateConfigurationLocked: mDockState=0; mCarMode=false; mNightMode=1; uiMode=17
+08-23 16:34:41.194  3650  3650 D GameManagerService: new battery level: 48
+08-23 16:34:41.200  4097  4097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+08-23 16:34:41.200  4097  4097 D KeyguardUpdateMonitor: handleBatteryUpdate
+08-23 16:34:41.205  4097  4097 D PowerUI : priorPlugType = 2 mPlugType =  2
+08-23 16:34:41.207  4097  4097 D PowerUI.Notification: showChargingNotice oldChargingType : 1 currentChargingType : 1 oldChargingTime : 5899000 mChargingTime : 5899000
+08-23 16:34:41.207  4097  4097 D PowerUI.Notification: There is no change about charging status, so return!
+08-23 16:34:41.214  4035  4035 V HeadsetService: HeadsetService - Received Intent.ACTION_BATTERY_CHANGED
+08-23 16:34:41.214  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:34:41.214  4035  4494 D HeadsetStateMachine: Disconnected process message: 10, size: 0
+08-23 16:34:41.215  4097  4097 D BatteryMeterDrawable: isSomethingChanged - false
+08-23 16:34:41.232  4097  4097 D Tile.FlashlightTile: ACTION_BATTERY_CHANGED - Level :: 48, emEnabled :: false
+08-23 16:34:41.798  3650  6921 D SSRM:t  : SIOP:: AP = 370, PST = 404 (W:12), CP = 319, CUR = 568, LCD = 82
+08-23 16:34:44.131  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:45.916  4668  4668 D io_stats: !@   8,0 r 71580002 2179766332 w 8060497 161227796 d 1074315 145531384 f 2409085 2408880 iot 23636300 16780670 th 61440 61440 61484 pt 400 inp 0 0 899601.483
+08-23 16:34:47.155  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:47.580  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 6 99 -4 -200 -4 -200 -1 99 -101 -6 140 2 2147483647 0x2000 gsm|lte level=2
+08-23 16:34:47.580  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:34:47.582  4035  4035 D HeadsetPhoneState: Signal level : previous=3 curr=2
+08-23 16:34:47.583  4035  4035 D HeadsetPhoneState: sendDeviceStateChanged. mService=1 mSignal=2 mRoam=0 mBatteryCharge=2
+08-23 16:34:47.583  4035  4494 D HeadsetStateMachine: Disconnected process message: 11, size: 0
+08-23 16:34:47.584  4035  4494 E HeadsetStateMachine: Unknown message: 11
+08-23 16:34:47.593  4035  4035 D HeadsetPhoneState: Signal level : previous=2 curr=2
+08-23 16:34:47.596  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 6 99 -6 -200 -6 -200 -1 10 -101 -6 140 2 2147483647 0x2000 gsm|lte level=2
+08-23 16:34:47.596  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:34:48.859  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 6 99 -8 -200 -8 -200 -1 99 -100 -6 110 2 2147483647 0x3000 gsm|lte level=3
+08-23 16:34:48.860  4035  4035 D HeadsetPhoneState: Signal level : previous=2 curr=3
+08-23 16:34:48.861  4035  4035 D HeadsetPhoneState: sendDeviceStateChanged. mService=1 mSignal=3 mRoam=0 mBatteryCharge=2
+08-23 16:34:48.860  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:34:48.862  4035  4494 D HeadsetStateMachine: Disconnected process message: 11, size: 0
+08-23 16:34:48.862  4035  4494 E HeadsetStateMachine: Unknown message: 11
+08-23 16:34:48.870  4035  4035 D HeadsetPhoneState: Signal level : previous=3 curr=3
+08-23 16:34:48.876  4097  4390 D NetworkController.MobileSignalController(0/2): onSignalStrengthsChanged signalStrength=SignalStrength: 6 99 -6 -200 -6 -200 -1 11 -100 -6 110 2 2147483647 0x3000 gsm|lte level=3
+08-23 16:34:48.876  4097  4390 D NetworkController.MobileSignalController(0/2): getMobileIconGroup(): 13
+08-23 16:34:50.180  3650  3921 D WifiStateMachine: Current network is: "Motul" , ID is: 39
+08-23 16:34:50.180  3650  3921 D WifiStateMachine: 24GHz mQnsLowerRssiThreshold is recovered, currentRssi = -59
+08-23 16:34:50.922  4668  4668 D io_stats: !@   8,0 r 71580002 2179766332 w 8060498 161227812 d 1074315 145531384 f 2409086 2408881 iot 23636300 16780671 th 61440 61440 61484 pt 400 inp 0 0 899606.489
+08-23 16:34:51.238  3650  3982 D BatteryService: !@BatteryListener : batteryPropertiesChanged!
+08-23 16:34:51.239  3650  3982 D BatteryService: level:49, scale:100, status:2, health:2, present:true, voltage: 3944, temperature: 346, technology: Li-ion, AC powered:false, USB powered:true, POGO powered:false, Wireless powered:false, icon:17303690, invalid charger:0, maxChargingCurrent:0, maxChargingVoltage:0, chargeCounter:0
+08-23 16:34:51.240  3650  3982 D BatteryService: online:6, current avg:568, charge type:1, power sharing:false, high voltage charger:false, capacity:280000, batterySWSelfDischarging:false, misc_event:0, current_now:616
+08-23 16:34:51.240  3650  3650 D BatteryService: Sending ACTION_BATTERY_CHANGED.
+08-23 16:34:51.249  3650  3679 D PowerManagerService: [PSM] lowPowerModeEnabled: false (mLowPowerModeSetting: false, mIsPowered: true, mAutoLowPowerModeConfigured: false, mBatteryLevel: 49, mLowBatteryTriggerLevel: 0, mUltraPowerSavingModeEnabled: false, mEmergencyModeEnabled: false)
+08-23 16:34:51.252  3650  3650 D NetworkPolicy: mChargingStateReceiver: newState(true), oldState(false)
+08-23 16:34:51.262  4097  4097 D KeyguardUpdateMonitor: received broadcast android.intent.action.BATTERY_CHANGED
+08-23 16:34:51.262  4097  4097 D KeyguardUpdateMonitor: handleBatteryUpdate
+08-23 16:34:51.270  3650  3670 E BatteryStatsService: no controller energy info supplied
+08-23 16:34:51.270  4097  4097 D PowerUI : priorPlugType = 2 mPlugType =  2
+08-23 16:34:51.273  4097  4097 D PowerUI.Notification: showChargingNotice oldChargingType : 1 currentChargingType : 1 oldChargingTime : 5899000 mChargingTime : 5888000
+08-23 16:34:51.273  4097  4097 D PowerUI.Notification: showChargingNotification()
+08-23 16:34:51.283  4035  4035 V HeadsetService: HeadsetService - Received Intent.ACTION_BATTERY_CHANGED
+08-23 16:34:51.284  4035  4494 D HeadsetStateMachine: Disconnected process message: 10, size: 0
+08-23 16:34:51.299  3650 27692 D ApplicationPolicy: isStatusBarNotificationAllowedAsUser: packageName = com.android.systemui,userId = -1
+08-23 16:34:51.304  4097  4097 D BatteryMeterDrawable: isSomethingChanged - true
+08-23 16:34:51.305  4097  4097 D BatteryMeterDrawable: isSomethingChanged - true
+08-23 16:34:51.306  3650  3650 D MountService: getExternalStorageMountMode : 1
+08-23 16:34:51.306  3650  3650 D MountService: getExternalStorageMountMode : 3
+08-23 16:34:51.306  4097  4097 D Tile.FlashlightTile: ACTION_BATTERY_CHANGED - Level :: 49, emEnabled :: false
+08-23 16:34:51.306  8847  8847 E MtpServerJNI: server is null in send_object_removed
+08-23 16:34:51.306  3650  3650 D MountService: getExternalStorageMountMode : final mountMode=1, uid : 10288, packageName : com.google.android.apps.photos
+08-23 16:34:51.325  4035  4220 W bt_btif : btif_dm_upstreams_cback  ev: BTA_DM_ENER_INFO_READ
+08-23 16:34:51.326  3650  3650 I ActivityManager: Start proc 17897:com.google.android.apps.photos/u0a288 for service com.google.android.apps.photos/.camerashortcut.CameraShortcutJobSchedulerService
+08-23 16:34:51.330 17897 17897 E Zygote  : v2
+08-23 16:34:51.330 17897 17897 I libpersona: KNOX_SDCARD checking this for 10288
+08-23 16:34:51.330 17897 17897 I libpersona: KNOX_SDCARD not a persona
+08-23 16:34:51.332 17897 17897 E Zygote  : accessInfo : 0
+08-23 16:34:51.332  3650  3650 E BatteryStatsService: power: Missing API
+08-23 16:34:51.334 17897 17897 W SELinux : SELinux selinux_android_compute_policy_index : Policy Index[2],  Con:u:r:zygote:s0 RAM:SEPF_SECMOBILE_7.0_0005, [-1 -1 -4 -1 0 1]
+08-23 16:34:51.337 17897 17897 I SELinux : SELinux: seapp_context_lookup: seinfo=untrusted, level=s0:c512,c768, pkgname=com.google.android.apps.photos 
+08-23 16:34:51.395 17897 17897 D TimaKeyStoreProvider: TimaKeyStore is not enabled: cannot add TimaSignature Service and generateKeyPair Service
+08-23 16:34:51.429  3650  3666 D NetworkPolicy: setRestrictBackgroundLocked(): false
+08-23 16:34:51.444  3650  3666 W NetworkManagement: setDataSaverMode(): already false
+08-23 16:34:51.446  3650  3666 D NtpTrustedTime: currentTimeMillis() cache hit
+08-23 16:34:51.453  3650  3666 V NetworkPolicy: updateNotificationsLocked() - totalBytes : 0, policy : NetworkPolicy[NetworkTemplate: matchRule=PROXY, subscriberId=530052..., matchSubscriberIds=[530052...]]: cycleDay=1, cycleTimezone=Pacific/Auckland, warningBytes=-1, limitBytes=-1, lastWarningSnooze=-1, lastLimitSnooze=-1, metered=true, inferred=true
+08-23 16:34:51.466  3650  3666 V NetworkPolicy: updateNotificationsLocked() - totalBytes : 0, policy : NetworkPolicy[NetworkTemplate: matchRule=PROXY, subscriberId=334020..., matchSubscriberIds=[334020...]]: cycleDay=1, cycleTimezone=America/Mexico_City, warningBytes=-1, limitBytes=-1, lastWarningSnooze=-1, lastLimitSnooze=-1, metered=true, inferred=true
+08-23 16:34:51.474  3650  3666 V NetworkPolicy: updateNotificationsLocked() - totalBytes : 1175515175, policy : NetworkPolicy[NetworkTemplate: matchRule=MOBILE_ALL, subscriberId=334020..., matchSubscriberIds=[334020...]]: cycleDay=27, cycleTimezone=America/Mexico_City, warningBytes=1610612736, limitBytes=-1, lastWarningSnooze=1500198301285, lastLimitSnooze=-1, metered=true, inferred=false
