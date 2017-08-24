@@ -28,7 +28,7 @@ class LocationInfo extends Component{
         this.state = { 
 					latitude: 0,
                     longitude: 0,
-                    showFavorite:false
+                    showFavorite:false,
 		};
     }
 
@@ -55,7 +55,7 @@ class LocationInfo extends Component{
         return this.formatDistance(12742 * Math.asin(Math.sqrt(a))); // 2 * R; R = 6371 km
     }
     
-    componentWillMount(newProps)
+    componentWillMount()
     {        
         this.setCurrentPosition();
     }
@@ -72,7 +72,6 @@ class LocationInfo extends Component{
             null, // error callback
             null //{ enableHighAccuracy:false} // options - TODO: enable high accuracy = true for live
         );
-        
     }
 
     togglefavorite(id)
@@ -104,7 +103,7 @@ class LocationInfo extends Component{
                         </View>   
                         <View style={{flexDirection:'row', justifyContent:'space-between'}}>
                             <View style={{flexDirection:'row'}}><Text style={styles.locationText}>4.2</Text><Image source={images.starFilled} style={{height:15, width:15}} /></View>
-                            <Text style={styles.locationText}>{this.getDistance(info.geometry.coordinates[1], info.geometry.coordinates[0])}</Text>
+                            {this.props.showDistance ? <Text style={styles.locationText}>{this.getDistance(info.geometry.coordinates[1], info.geometry.coordinates[0])}</Text> : null}
                         </View>
                         <View style={[styles.leftRow, {marginLeft:-2}]}> 
                             {info.tags.map((tag) => {

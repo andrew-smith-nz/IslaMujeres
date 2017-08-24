@@ -39,15 +39,17 @@ class Map extends Component {
         this.setActiveLocation = this.setActiveLocation.bind(this);
         this.clearSearchResults = this.clearSearchResults.bind(this);
         this.openAnnotation = this.openAnnotation.bind(this);
+        this.centerOnLocation = this.centerOnLocation.bind(this);
             
         this.state = {
             zoom: 16,
-            userTrackingMode: Mapbox.userTrackingMode.followWithHeading,   
+            userTrackingMode: Mapbox.userTrackingMode.none,   
             selectedLocationId:   this.props.activeLocationId,
             markedLocationIds: this.props.navigation.state.params ? this.props.navigation.state.params.markedLocationIds : [],
             //
             recenterMap: false,
             expanded: false,
+            userLocation: null
             }
     }
 
@@ -58,6 +60,11 @@ class Map extends Component {
 
     componentWillMount()
     {
+        navigator.geolocation.getCurrentPosition(
+            (position) => this.onUpdateUserLocation({latitude: position.coords.latitude, longitude: position.coords.longitude}),
+            null, // error callback
+            null //{ enableHighAccuracy:false} // options - TODO: enable high accuracy = true for live
+        );
         // TODO: remove hardcoding
         //this.onUpdateUserLocation({ latitude: 21.2582, longitude: -86.7492 });
     }
@@ -188,13 +195,31 @@ class Map extends Component {
     }
 
     onUpdateUserLocation(payload){
-        this.setState({userLocation: {longitude: payload.longitude, latitude: payload.latitude }});
+        // only update if they're on The Island
+        if (payload.longitude >= -86.7574 && payload.longitude <= -86.7089
+            && payload.latitude >= 21.1967 && payload.latitude <= 21.2683)
+        {
+            Reactotron.log('on the island')
+            this.setState({userLocation: {longitude: payload.longitude, latitude: payload.latitude }});
+        }
+        else
+        {
+            Reactotron.log('not on the island')
+            this.setState({userLocation: null});
+        }
     }
 
     clearSearchResults(){
         this.props.setHighlightedLocations([]);
         this.setActiveLocation(null);
         this.props.search('');
+    }
+
+    centerOnLocation()
+    {
+        Reactotron.log(this.state.userLocation);
+        if (this.state.userLocation)
+            this._map.setCenterCoordinate(this.state.userLocation.latitude, this.state.userLocation.longitude, true, null);                
     }
 
     onRegionDidChange(){
@@ -232,7 +257,7 @@ class Map extends Component {
                     //onRegionWillChange={this.onRegionWillChange}
                     onOpenAnnotation={this.openAnnotation}
                     //onRightAnnotationTapped={this.onRightAnnotationTapped}
-                    //onUpdateUserLocation={this.onUpdateUserLocation}
+                    onUpdateUserLocation={this.onUpdateUserLocation}
                     onTap={this.onTap}
                     attributionButtonIsHidden={false}
                     logoIsHidden={false}
@@ -247,7 +272,7 @@ class Map extends Component {
                         </View>                
                     </TouchableOpacity>
                     <View style={{height: infoHeight}}>
-                        <LocationInfo id={this.props.activeLocationId} expanded={this.state.expanded} userLocation={this.state.userLocation} />
+                        <LocationInfo id={this.props.activeLocationId} expanded={this.state.expanded} showDistance={this.state.userLocation}    />
                     </View>
                     {this.state.expanded && this.props.activeLocationId ? null : 
                     <SearchBar floating={true} callback={() => { this.props.navigation.navigate('Search')}} />}
@@ -258,6 +283,18 @@ class Map extends Component {
                         </TouchableOpacity>
                     </View> 
                     : null}
+                    <View style={{position:'absolute',  right:10,bottom:'28%', height:40, zIndex:1}}>
+                        <TouchableOpacity onPress={() => this.centerOnLocation()}>
+                            <View style={{ width: 40,
+                                height: 40,
+                                borderRadius: 40/2,
+                                borderColor: 'black',
+                                borderWidth: 0.5,
+                                backgroundColor: 'white'}}>
+                                <Icon name="crosshairs" size={25} color='black' style={{paddingLeft: 8, paddingTop:6.5}} />
+                            </View>
+                        </TouchableOpacity>
+                    </View>
             </View>);
     }
 }

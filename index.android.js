@@ -31,7 +31,6 @@ let store = createStore(combineReducers({search, setActiveLocation, setHighlight
 class IslaMujeres extends Component{
   constructor(props){
       super(props);
-      Reactotron.log("Test");
       this.state = { rehydrated: false, mapProgress: 0, mapLoaded: false, mapDownloading: true }
       Reactotron.configure({ host: '192.168.0.103' }).use(asyncStorage()).connect()      
   }
@@ -44,7 +43,6 @@ class IslaMujeres extends Component{
 
   addOfflinePack()
   {
-    Reactotron.log("Adding map");
     const subscription = Mapbox.addOfflinePackProgressListener(progressObject => {
       // progressObject has the same format as above
       try {
@@ -53,7 +51,6 @@ class IslaMujeres extends Component{
             let completed = progressObject.countOfResourcesCompleted ? progressObject.countOfResourcesCompleted : 0;
             let total = progressObject.countOfResourcesExpected ? progressObject.countOfResourcesExpected : 1;
             let progress = Math.round(100 * completed / total, 2) / 100;
-            Reactotron.log("map progress (" + completed + " / " + total)
             this.setState(
                 {
                   mapProgress: progress,
@@ -88,29 +85,38 @@ class IslaMujeres extends Component{
   initializeMap()
   {
     Mapbox.setAccessToken('pk.eyJ1IjoidnVscGVzbnoiLCJhIjoiY2o1NWxkZGFtMGRlbzMzbWNnYmEzOG9ncCJ9.nXgM6lu675sFq_53JffL8g');
+
+    Mapbox.initializeOfflinePacks().then(() => {
       //Mapbox.removeOfflinePack('IslaMujeres')
-      //Mapbox.initializeOfflinePacks();
-      // Map is approx 100MB
-      //Mapbox.removeOfflinePack('test'); return;
-      let mapDownloaded = false;
-      Mapbox.getOfflinePacks().then(packs => { Reactotron.log(packs); mapDownloaded = packs.filter(p => p.name === "IslaMujeres").length > 0 });
-      /* Reactotron.log("mapDownloaded = " + mapDownloaded);
-      if (!mapDownloaded)
-        this.addOfflinePack();
-      else
-        this.setState({mapDownloading: false});       */
+      // get packs to see if the map is already downloaded
+      Mapbox.getOfflinePacks().then(packs => { 
+        Reactotron.log(packs);
+        let mapDownloaded = packs.filter(p => p.name === "IslaMujeres").length > 0
+        // if it's not downloaded, commence download
+        if (!mapDownloaded)
+          this.addOfflinePack();
+        else
+        {
+          //this.timeoutHandle = setTimeout(()=>{
+            this.setState({mapDownloading: false});
+        //}, 2000);          
+        }
+      });        
+    });
+    // Map is approx 100MB
+    //Mapbox.removeOfflinePack('test'); return;
+    //Mapbox.removeOfflinePack('IslaMujeres').then(() => { Reactotron.log("removed pack"); Mapbox.getOfflinePacks().then(packs => Reactotron.log(packs));});
+        
   }
 
 	render() {
-    
-
     //if(!this.state.rehydrated)
     //{
     //  return <View style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}}><Text>Loading...</Text></View>
     //}
     if (this.state.mapDownloading)
     {
-      return <View style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}}><Text>{this.state.mapProgress}</Text><Splash progress={this.state.mapProgress} /></View>
+      return <View style={{width:'100%', height:'100%', alignItems:'center', justifyContent:'center'}}><Splash style={{width:'100%', height:'100%'}} progress={this.state.mapProgress} /></View>
     }
 	  return <Provider store={store}>
             <View style={{flex:1}}>
